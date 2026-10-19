@@ -2,14 +2,15 @@
 description: ARS ars-format-convert - Format convert LaTeX/DOCX/citations
 ---
 
-Load the skill `academic-paper` with the OpenCode `skill` tool, then run mode `format-convert`.
+Load the skill `academic-paper` with the OpenCode `skill` tool, then run mode `format-convert`. For PDF output also load `tachyon-tex`.
 
 User request: $ARGUMENTS
 
 Instructions:
 1. Use skill tool: skill(name="academic-paper").
 2. Follow `.opencode/skills/academic-paper/SKILL.md` mode `format-convert`. Mode registry: `MODE_REGISTRY.md`.
-3. Shared contracts: `.opencode/shared/`.
+3. PDF path: after `.tex` is ready, skill(name="tachyon-tex") and compile per `docs/PDF_BACKEND_TACHYON.md` (`/ars-pdf`). Keep `.tex` source.
+4. Shared contracts: `.opencode/shared/`.
 4. Human-in-the-loop: stop at each checkpoint and ask user to confirm before advancing. Integrity gates 2.5/4.5 are mandatory.
 5. If skill files cannot be loaded, report failure and stop. Do not substitute this summary for mode instructions.
 6. Upstream: Imbad0202/academic-research-skills v3.23.1. This is an OpenCode port, CC-BY-NC-4.0, non-commercial only.

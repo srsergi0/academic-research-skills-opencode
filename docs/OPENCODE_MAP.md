@@ -4,7 +4,7 @@ Port of upstream `docs/CONTROL_AVAILABILITY.md` for OpenCode channel.
 
 | Mechanism | OpenCode port status |
 |---|---|
-| Methodology layer (5 SKILL.md protocols) | Active, vendored in `.opencode/skills/` |
+| Methodology layer (5 SKILL.md protocols + tachyon-tex) | Active, vendored in `.opencode/skills/` |
 | Skill auto-routing | Conditional, via `skill` tool + descriptions |
 | Cross-skill routing discipline | Prompt-level, in each SKILL.md |
 | `/ars-*` commands | Active, in `.opencode/commands/` with `$ARGUMENTS` |
@@ -19,3 +19,4 @@ Port of upstream `docs/CONTROL_AVAILABILITY.md` for OpenCode channel.
 | Claim-audit `ARS_CLAIM_AUDIT=1` | Documented, not wired to formatter hard gate |
 
 Upstream version: v3.23.1. No accuracy claim beyond upstream docs. See upstream `docs/RISK_REGISTER.md` and `docs/DATA_FLOWS.md` for risks.
+| PDF rendering (tachyon-tex-cli) | Active via vendored tachyon-tex skill + npx github:srsergi0/tachyon-tex-cli (auto/Tectonic, latexmk fallback). See docs/PDF_BACKEND_TACHYON.md. Commands /ars-pdf, /ars-preview |

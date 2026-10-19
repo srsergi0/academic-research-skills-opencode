@@ -24,7 +24,14 @@ git clone https://github.com/<you>/academic-research-skills-opencode.git
 cp -R academic-research-skills-opencode/.opencode /path/to/project/.opencode
 cp academic-research-skills-opencode/MODE_REGISTRY.md /path/to/project/MODE_REGISTRY.md
 ```
-Then in OpenCode: `/ars-plan`, `/ars-full`, `/ars-reviewer`, etc. Or invoke skill directly: `skill(name="academic-pipeline")`.
+Then in OpenCode: `/ars-plan`, `/ars-full`, `/ars-reviewer`, `/ars-pdf`, `/ars-preview`, etc. Or invoke skill directly: `skill(name="academic-pipeline")`.
+
+## PDF backend: tachyon-tex-cli (default)
+PDF goes through vendored skill `.opencode/skills/tachyon-tex/` (from `srsergi0/tachyon-tex-cli`, Fair Source 0.9). No global install, needs Node.js 22+:
+```sh
+npx --yes github:srsergi0/tachyon-tex-cli main.tex --json
+```
+Details: `docs/PDF_BACKEND_TACHYON.md`. DOCX still via Pandoc path from upstream.
 
 ## OpenCode differences
 - Frontmatter made OpenCode-compliant: `name` matches dir, `description` <=1024 chars, `metadata.opencode/slash: "true"`. Full trigger lists stay in body.
