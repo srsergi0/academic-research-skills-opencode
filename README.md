@@ -20,8 +20,8 @@ Upstream commit pinned in `.upstream-version`. `MODE_REGISTRY.md` and `.opencode
 ## Idioma: español + inglés (por defecto `es-en`)
 Resúmenes bilingües ES+EN, guía APA en español, cribado y ejemplos en español. Detalle y excepciones: `docs/SPANISH_SUPPORT.md`.
 
-## Idioma: español + inglés (por defecto `es-en`)
-Resúmenes bilingües ES+EN, guía APA en español, cribado y ejemplos en español. Detalle y excepciones: `docs/SPANISH_SUPPORT.md`.
+## Flujo completo: de la idea al artículo
+Guía paso a paso con comandos, checkpoints y qué esperar en cada stage: `docs/FLUJO_CREAR_ARTICULO.md`.
 
 ## Install (project-local, no global install)
 ```sh
