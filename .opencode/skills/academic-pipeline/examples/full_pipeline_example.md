@@ -5,7 +5,7 @@
 **User type**: Master's student in Education, first time writing an academic paper
 **Topic**: The impact of declining birthrate on enrollment strategies of private universities in Taiwan
 **Goal**: Complete a submission-ready IMRaD paper
-**Language**: Traditional Chinese (bilingual abstract)
+**Language**: Spanish (bilingual abstract)
 
 ---
 
@@ -95,7 +95,7 @@ Methodology:
   - Quantitative: Ministry of Education open data analysis (academic years 109-113)
   - Qualitative: In-depth interviews with enrollment directors at 3-5 private universities
 
-Target journal level: TSSCI
+Target journal level: SciELO/Latindex
 
 Extracted INSIGHTs (8):
   [INSIGHT 1] Research focus = actual effectiveness of enrollment strategies on freshmen enrollment rate
@@ -126,7 +126,7 @@ Stage 1 (RESEARCH) Complete!
 Deliverables:
 - RQ Brief: Focused on three enrollment strategies' impact on enrollment rates at private universities
 - Methodology Blueprint: Mixed methods (quantitative MOE data + qualitative interviews)
-- Annotated Bibliography: 22 references (17 Chinese + 5 English)
+- Annotated Bibliography: 22 references (17 Spanish + 5 English)
 - Synthesis Report: Identified 3 research gaps
 
 Next step is Stage 2 (WRITE).
@@ -185,7 +185,7 @@ Stage 2 (WRITE) Complete!
 
 Deliverables:
 - Paper Draft: 5,200-word IMRaD paper
-  - Abstract (Chinese 420 words + English 230 words)
+  - Abstract (Spanish 420 words + English 230 words)
   - Introduction: Research background and problem statement
   - Literature Review: Three themes (birthrate trends, enrollment strategy classification, effectiveness evaluation)
   - Methodology: Mixed methods design
@@ -375,7 +375,7 @@ Since this is Minor Revision (not Major), we can proceed directly to Stage 5 (FI
 Minor changes will be handled during the formatting process.
 
 What format do you need for the final version?
-  a) LaTeX (.tex + .bib) -- suitable for TSSCI journal submission
+  a) LaTeX (.tex + .bib) -- suitable for SciELO journal submission
   b) DOCX -- suitable for internal school review
   c) PDF -- suitable for sharing
   d) All of the above
@@ -463,7 +463,7 @@ formatter_agent executing format conversion...
 | Pipeline Complete!                      |
 | Final paper: 6,800 words, IMRaD        |
 | Citations: 30 (APA 7.0)               |
-| Abstract: Chinese 420 words +          |
+| Abstract: Spanish 420 words +          |
 |           English 230 words            |
 +=========================================+
 

@@ -14,9 +14,9 @@ Detailed per-phase agent behavior and output descriptions for the 8-phase orches
 - Target journal (optional)
 - Citation format (APA 7 / Chicago / MLA / IEEE / Vancouver)
 - Output format (LaTeX / DOCX / PDF / Markdown / Combined)
-- Language (EN / zh-TW / bilingual sections)
-- Bilingual abstract (Yes / EN-only / zh-TW-only) — cardinality only; it does not select which languages
-- Output language pair (`output_language_pair`) — the two abstract languages, from the registry in `shared/output_language_pair.md`; default `zh-tw-en`, per-run override; the PCR row is omitted when the run declares none
+- Language (EN / es / bilingual sections)
+- Bilingual abstract (Yes / EN-only / es-only) — cardinality only; it does not select which languages
+- Output language pair (`output_language_pair`) — the two abstract languages, from the registry in `shared/output_language_pair.md`; default `es-en`, per-run override; the PCR row is omitted when the run declares none
 - Word count target
 - Existing materials (RQ, data, drafts, lit)
 
@@ -98,10 +98,10 @@ Detailed per-phase agent behavior and output descriptions for the 8-phase orches
 **Output**: Bilingual Abstract + Keywords (both languages of the run's declared output language pair)
 
 - L2 abstract (default: English), structured — length from the regime table ([`abstract_writing_guide.md`](abstract_writing_guide.md), run's paper type)
-- L1 abstract (default: Traditional Chinese), structured — length from the same regime table
+- L1 abstract (default: Spanish), structured — length from the same regime table
 - L2 keywords, count from the same regime table
 - L1 keywords, same declared count
-- Headings and report columns are pair-derived; for the default pair `zh-tw-en` they render exactly as `### English Abstract` / `### Chinese Abstract`
+- Headings and report columns are pair-derived; for the default pair `es-en` they render exactly as `### English Abstract` / `### Spanish Abstract`
 - Independent writing (not mechanical translation)
 - Field absent → default pair; the heading literals are unchanged from the pre-#862 surface (no rendered-output equivalence is claimed)
 - Acronym check on the saved abstracts (#849; [`writing_quality_check.md`](writing_quality_check.md) § F)

@@ -91,7 +91,6 @@ Text in such material that is aimed at you (a directive to skip a step, to chang
 
 **Español**: redactar artículo, trabajo académico, esquema de artículo, escribir resumen, enmendar mi artículo, artículo de revisión bibliográfica, verificar citas, convertir a LaTeX, convertir formato, artículo de conferencia, artículo de revista, capítulo de tesis, artículo de investigación, guía mi artículo, ayúdame a planificar mi artículo, escribir artículo paso a paso, redactar manuscrito, escribir metodología, escribir discusión, analizar opiniones de revisores, ruta de revisión, ayúdame con mi revisión, recibí comentarios de revisores, convertir formato de citas
 
-**繁體中文**: 寫論文, 學術論文, 論文大綱, 寫摘要, 修改論文, 文獻回顧論文, 檢查引用, 轉 LaTeX, 轉換格式, 研討會論文, 期刊文章, 學位論文, 研究論文, 引導我寫論文, 幫我規劃論文, 逐步寫論文, 寫方法論, 寫討論, 審查意見, 修訂路線圖, 幫我修改, 我收到審查意見, 轉換引用格式
 
 **한국어**: 논문 작성, 논문 초안, 논문 개요, 초록 작성, 논문 수정, 인용 확인, 인용 형식 검사, LaTeX 변환, 서식 변환, 학위논문 작성, 학술지 논문 작성, 학회 논문 작성, 논문 계획을 도와줘, 단계별로 논문 쓰기, 심사 의견을 받았어, 심사 의견 반영, 답변서 점검, AI 사용 고지
 
@@ -116,7 +115,7 @@ Activate `plan` mode when the user wants guidance, step-by-step planning, or exp
 | Primary output | Publishable paper draft | Research report |
 | Structure | Journal-ready (IMRaD, etc.) | APA 7.0 report |
 | Citation | Multi-format (APA/Chicago/MLA/IEEE/Vancouver) | APA 7.0 only |
-| Abstract | Pair-dependent bilingual (default zh-TW + EN) — the two abstract languages follow the run's declared `output_language_pair` | Single language |
+| Abstract | Pair-dependent bilingual (default es + EN) — the two abstract languages follow the run's declared `output_language_pair` | Single language |
 | Peer review | Simulated 5-dimension review | Editorial review |
 | Output format | LaTeX/DOCX (via Pandoc)/PDF/Markdown | Markdown only |
 | Revision loop | Max 2 rounds with targeted feedback | Max 2 rounds |
@@ -133,7 +132,7 @@ Activate `plan` mode when the user wants guidance, step-by-step planning, or exp
 | 4 | `argument_builder_agent` | Argument construction, claim-evidence chains, logical flow, counter-argument handling; Plan mode argument stress test | Phase 3 / Plan Step 3 |
 | 5 | `draft_writer_agent` | Section-by-section full draft writing, discipline register adjustment, word count tracking | Phase 4 |
 | 6 | `citation_compliance_agent` | Citation format verification, reference list completeness, DOI checking | Phase 5a |
-| 7 | `abstract_bilingual_agent` | Pair-dependent bilingual abstract (default zh-TW + EN), keyword count from the regime table in `references/abstract_writing_guide.md` | Phase 5b |
+| 7 | `abstract_bilingual_agent` | Pair-dependent bilingual abstract (default es + EN), keyword count from the regime table in `references/abstract_writing_guide.md` | Phase 5b |
 | 8 | `peer_reviewer_agent` | Simulated double-blind review, five-perspective categorical assessment, revision suggestions (max 2 rounds) | Phase 6 |
 | 9 | `formatter_agent` | Convert to LaTeX/DOCX (via Pandoc)/PDF/Markdown, journal formatting, cover letter, citation format conversion (APA 7 / Chicago / MLA / IEEE / Vancouver) | Phase 7 |
 | 10 | `socratic_mentor_agent` | Plan mode Socratic mentor: chapter-by-chapter guidance, convergence criteria (4 signals), question taxonomy (4 types), INSIGHT extraction | Plan Step 0-3 |
@@ -399,7 +398,7 @@ Whether the note appears must not depend on the topic, the wording, or the kind 
 
 **How to show it.**
 
-- Show the note text below verbatim: the English text in English conversations, the Traditional Chinese text in Traditional Chinese conversations, and the English text in every other language. Do not shorten, reorder, paraphrase, or add to it. Add no recommendation, default, or comment on which form fits the question, before or after it.
+- Show the note text below verbatim: the English text in English conversations, the Spanish text in Spanish conversations, and the English text in every other language. Do not shorten, reorder, paraphrase, or add to it. Add no recommendation, default, or comment on which form fits the question, before or after it.
 - Then stop and wait for the author's reply. Do not start the literature search, the review, or Phase 2 before the author replies.
 - The note does not reopen the choice of workflow. If the author skips it, the mode the author asked for continues unchanged.
 - If the author asks which form fits their question, say that the choice is theirs. On request, describe any form in more detail, without a comparison that favours one form for their question.
@@ -426,18 +425,18 @@ Whether the note appears must not depend on the topic, the wording, or the kind 
 >
 > Reply with the form you want, or reply "skip" to continue as you are. Either reply is your decision, and this note will not appear again in this project.
 
-**Note text (Traditional Chinese):**
+**Note text (Spanish):**
 
-> **開始回顧之前：要做哪一種文獻回顧？**
-> 這件事由你決定，ARS 不替你選。下列選項沒有預設、沒有推薦，排列順序也不代表高下。
+> **Antes de empezar la revisión: ¿qué forma de revisión bibliográfica?**
+> Esto lo decides tú, ARS no lo elige por ti. No hay opción por defecto ni recomendación, y el orden siguiente no es un ranking.
 >
-> - **系統性回顧（systematic review）**：回答一個聚焦的問題，檢索與篩選方式事先訂好，盡可能由兩人各自獨立篩選。一個數人團隊需要數個月到一年以上，通常有已登錄的研究計畫書。ARS 對應：`systematic-review` 模式。
-> - **範疇回顧（scoping review）**：用系統化的做法盤點一個主題已經研究了什麼、有哪些主要概念、缺口在哪裡。工作量隨主題的廣度增加。ARS 沒有專屬模式。
-> - **敘事或整合性回顧（narrative / integrative review）**：從文獻建立論證或架構。敘事回顧由作者選擇文獻；整合性回顧會記錄檢索與評估過程，並可合併不同研究設計。工作量取決於作者設定的範圍。ARS 對應：`lit-review` 模式。
-> - **快速回顧（rapid review）**：為了早點交出結果而縮短或省略部分步驟的系統性回顧，通常在數週到數個月內完成。ARS 沒有專屬模式。
-> - **不做正式回顧**：用手邊的文獻寫背景，例如論文的緒論。不宣稱涵蓋整體文獻。
+> - **Revisión sistemática**: responde una pregunta focalizada con un plan de búsqueda y cribado fijado de antemano, con dos personas cribando de forma independiente cuando sea posible. De meses a más de un año para un equipo de varias personas, a menudo con protocolo registrado. En ARS: modo `systematic-review`.
+> - **Revisión de alcance (scoping review)**: mapea qué se ha estudiado sobre un tema, los conceptos principales y las brechas, con un enfoque sistemático. El trabajo crece con la amplitud del tema. ARS no tiene un modo separado para esta forma.
+> - **Revisión narrativa o integradora**: construye un argumento o un marco desde la literatura. En la revisión narrativa la autoría elige las fuentes; la integradora documenta su búsqueda y evaluación y puede combinar distintos diseños de estudio. El trabajo depende del alcance que defina la autoría. En ARS: continúa en el modo actual.
+> - **Revisión rápida (rapid review)**: una revisión sistemática con algunos pasos acortados u omitidos para entregar antes, normalmente en semanas o pocos meses. ARS no tiene un modo separado para esta forma.
+> - **Sin revisión formal**: contexto con las fuentes disponibles, por ejemplo para una introducción. No pretende cubrir toda la literatura.
 >
-> 請回覆你要的形式，或回覆「跳過」照目前的做法繼續。兩種回覆都算你的決定，這個專案裡不會再出現這則提醒。
+> Responde con la forma que quieres, o responde "omitir" para continuar como estás. Cualquiera de las dos respuestas es tu decisión, y esta nota no volverá a aparecer en este proyecto.
 <!-- review-form-note:end -->
 
 ### Mode Selection Logic
@@ -449,9 +448,9 @@ Whether the note appears must not depend on the topic, the wording, or the kind 
 ## Citation-Check Mode
 
 Before auditing, load `agents/citation_compliance_agent.md`. For APA 7 with
-Chinese citations, also read `references/apa7_chinese_citation_guide.md`; use
+Spanish citations, also read `references/apa7_spanish_citation_guide.md`; use
 its locale-specific abbreviation and ordering checks rather than applying
-the Latin-script alphabetical checklist to Chinese names. Preserve supplied
+the Latin-script alphabetical checklist to Spanish names. Preserve supplied
 venue overrides and the guide's disambiguation exceptions.
 
 ---
@@ -546,13 +545,13 @@ See `agents/intake_agent.md` for the complete field definitions of the Phase 0 c
 **Agent definitions**: `agents/{agent_name}.md` — one file per agent (12 total, matching Agent Team table above).
 
 **References** (28 files in `references/`):
-- Citation: `apa7_extended_guide`, `apa7_chinese_citation_guide`, `citation_format_switcher`
+- Citation: `apa7_extended_guide`, `apa7_spanish_citation_guide`, `citation_format_switcher`
 - Writing: `academic_writing_style`, `writing_quality_check`, `writing_judgment_framework`
 - Structure: `paper_structure_patterns` (6 types), `abstract_writing_guide`, `intro_title_rhetoric_guide` (CARS moves + title checklist)
 - Domain: `hei_domain_glossary` (bilingual), `journal_submission_guide`, `latex_template_reference`, `domain_evidence_profiles` (advisory screening profiles)
 - Process: `failure_paths` (12 scenarios), `mode_selection_guide` (11 modes), `plan_mode_protocol`, `workflow_phase_details`, `revision_patch_protocol` (#390 Mode B commands + marker lifecycle)
 - Ethics: `credit_authorship_guide` (CRediT 14 roles), `funding_statement_guide`, `statistical_visualization_standards`
-- Disclosure (v3.2): `disclosure_mode_protocol` (default venue applicability/status bundle: `REQUIRED`, `ACTION_ONLY`, `NOT_REQUIRED`, `UNKNOWN`, plus typed halts; separate policy-anchor rendering), `venue_disclosure_policies` (v2 database: ICLR, NeurIPS, Nature, Science, ACL, EMNLP, plus medical-publishing policy targets — ICMJE, NEJM, The Lancet, JAMA, BMJ, PLOS, Frontiers, publisher-wide Chinese Nursing Journals Publishing House 中华护理杂志社, journal-level International Eye Science 国际眼科杂志)
+- Disclosure (v3.2): `disclosure_mode_protocol` (default venue applicability/status bundle: `REQUIRED`, `ACTION_ONLY`, `NOT_REQUIRED`, `UNKNOWN`, plus typed halts; separate policy-anchor rendering), `venue_disclosure_policies` (v2 database: ICLR, NeurIPS, Nature, Science, ACL, EMNLP, plus medical-publishing policy targets — ICMJE, NEJM, The Lancet, JAMA, BMJ, PLOS, Frontiers, publisher-wide Spanish Nursing Journals Publishing House 中华护理杂志社, journal-level International Eye Science 国际眼科杂志)
 - Integrity (v3.3): `anti_leakage_protocol` (knowledge isolation), `vlm_figure_verification` (optional VLM figure check)
 - Policy anchors (#108): `policy_anchor_table`, `policy_anchor_disclosure_protocol`
 - Meta: `changelog` (version history)
@@ -560,7 +559,7 @@ See `agents/intake_agent.md` for the complete field definitions of the Phase 0 c
 
 **Templates** (11 files in `templates/`): `imrad`, `literature_review`, `case_study`, `theoretical_paper`, `policy_brief`, `conference_paper`, `latex_article_template.tex`, `bilingual_abstract`, `credit_statement`, `funding_statement`, `revision_tracking` (4 status types).
 
-**Examples** (9 files in `examples/`): `imrad_hei_example`, `literature_review_example`, `plan_mode_guided_writing`, `chinese_paper_example`, `revision_mode_example`, `revision_recovery_example`, `clinical_citation_verification_checklist`, `clinical_epistemic_status_example`, `version_family_reconciliation_example`.
+**Examples** (9 files in `examples/`): `imrad_hei_example`, `literature_review_example`, `plan_mode_guided_writing`, `spanish_paper_example`, `revision_mode_example`, `revision_recovery_example`, `clinical_citation_verification_checklist`, `clinical_epistemic_status_example`, `version_family_reconciliation_example`.
 
 ---
 
@@ -591,7 +590,7 @@ Explicit prohibitions to prevent common failure modes:
 5. **Word count compliance** — within +/-10% of target, and never above the PCR `Word Ceiling` when one is set
 
 ### Bilingual Abstract Quality
-6. **Independent writing** — the two abstracts of the run's declared pair (default zh-TW and EN) are independently composed, NOT mechanical translations
+6. **Independent writing** — the two abstracts of the run's declared pair (default es and EN) are independently composed, NOT mechanical translations
 7. **Structural alignment** — both abstracts cover the same key points in the same order
 8. **Keywords** — count per language from the regime table in `references/abstract_writing_guide.md`, reflecting the paper's core concepts
 9. **Word count** — per the regime table in `references/abstract_writing_guide.md` for the run's declared pair and paper type (no figure restated here)
@@ -617,7 +616,7 @@ Explicit prohibitions to prevent common failure modes:
 
 ## Output Language
 
-Follows the user's language. Academic terminology is kept in English. The bilingual abstract follows the declared output language pair (`output_language_pair`) — nothing more. The pair selects the two abstract languages; it is not a body-language setting and not an abstract-cardinality setting (Bilingual / EN-only / zh-TW-only is a separate intake answer). The default entry `zh-tw-en` is Traditional Chinese (L1) + English (L2) — the pre-#862 pair, so a run that omits the field reproduces the legacy object keys and the legacy heading literals and omits the serialized key. Registry and language roles: [`shared/output_language_pair.md`](../shared/output_language_pair.md). Abstract length and keyword counts: the regime table in [`references/abstract_writing_guide.md`](references/abstract_writing_guide.md).
+Follows the user's language. Academic terminology is kept in English. The bilingual abstract follows the declared output language pair (`output_language_pair`) — nothing more. The pair selects the two abstract languages; it is not a body-language setting and not an abstract-cardinality setting (Bilingual / EN-only / es-only is a separate intake answer). The default entry `es-en` is Spanish (L1) + English (L2) — the pre-#862 pair, so a run that omits the field reproduces the legacy object keys and the legacy heading literals and omits the serialized key. Registry and language roles: [`shared/output_language_pair.md`](../shared/output_language_pair.md). Abstract length and keyword counts: the regime table in [`references/abstract_writing_guide.md`](references/abstract_writing_guide.md).
 
 ---
 

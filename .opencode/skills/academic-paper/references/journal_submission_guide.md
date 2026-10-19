@@ -78,15 +78,16 @@ Used by `formatter_agent` and `intake_agent`.
 | Teaching and Teacher Education | High | APA | 6,000-8,000 |
 | Computers & Education | High | APA | 6,000-10,000 |
 
-### Taiwan HEI Journals (TSSCI)
+### Spain HEI Journals (Latindex / SciELO)
 
-| Journal | Romanized Chinese Name | Citation Style |
-|---------|---------|---------------|
-| Journal of Research in Education Sciences | Jiao Yu Ke Xue Yan Jiu Qi Kan | APA |
-| Bulletin of Educational Research | Jiao Yu Yan Jiu Ji Kan | APA |
-| Journal of Taiwan Normal University: Education | Shi Da Xue Bao: Jiao Yu Lei | APA |
-| Journal of Educational Practice and Research | Jiao Yu Shi Jian Yu Yan Jiu | APA |
-| Higher Education Review | Gao Deng Jiao Yu | APA |
+| Journal | Indexing | Citation Style |
+|---------|----------|---------------|
+| Revista de Educación | JCR / Scopus / SciELO | APA |
+| Educación XX1 | JCR / Scopus | APA |
+| RELIEVE (Revista Electrónica de Investigación y Evaluación Educativa) | Scopus / SciELO / Latindex | APA |
+| Bordón | Scopus / Latindex | APA (check current guide) |
+| Teoría de la Educación | Scopus / Latindex | APA (check current guide) |
+| Cultura y Educación | JCR / Scopus | APA |
 
 ## Cover Letter Template
 

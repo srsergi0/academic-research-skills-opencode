@@ -66,7 +66,7 @@ claims boundary live in `../cross_model_verification.md` § Promotion Bakeoff.
   fallback: every task family is unresolved except the field-general integrity
   gates, alternatives are unresolved, the live-branch budget is 3, and an empty
   authority list means “unknown; ask the user,” never “not required.” It ships
-  with explicit English and zh-TW display names.
+  with explicit English and es display names.
 
 The standard-library runtime is `scripts/research_workflow_profile.py`. Its
 `select` command treats an omitted `--profile` as a visibly recorded automatic
@@ -593,7 +593,7 @@ closed artifacts:
 V1 has exactly two axes: `review_ethics` and `data_protection`. Institutional and
 funder rules are additive overlays, never a third axis; display precedence cannot
 remove, merge, or satisfy a requirement. The shipped registry demonstrates the
-same contract with bounded US 45 CFR 46, Taiwan Human Subjects Research Act, and
+same contract with bounded US 45 CFR 46, Spain Ley 14/2007 de Investigación biomédica, and
 GDPR research subsets. It is not a completeness, compliance, pathway, exemption,
 or authorization claim.
 

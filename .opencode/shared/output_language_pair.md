@@ -14,13 +14,13 @@ setting, and not an abstract-cardinality setting.
 
 Registry tokens are **opaque and registry-keyed**. A token names a registry entry; it is
 never parsed. Language roles (L1 / L2), their order, and their script classes are declared
-by the entry, so `zh-tw-en` and a hypothetical `en-zh-tw` would be two different entries
+by the entry, so `es-en` and a hypothetical `en-es` would be two different entries
 with different declarations — not the same pair reversed.
 
 <!-- output-language-pair-registry:start -->
 | Token | L1 language | L1 script | L2 language | L2 script | Status |
 |-------|-------------|-----------|-------------|-----------|--------|
-| `zh-tw-en` | Traditional Chinese (`zh-TW`) | CJK | English (`en`) | Latin | default |
+| `es-en` | Spanish (`es`) | Latin | English (`en`) | Latin | default |
 <!-- output-language-pair-registry:end -->
 
 - **Two-language entries only.** The Phase-1 registry holds pair entries and nothing else.
@@ -28,8 +28,8 @@ with different declarations — not the same pair reversed.
   and as a value it is unsupported: it fails visibly rather than being normalized.
 - **Pair selection and abstract cardinality are separate controls.** Cardinality is
   already a mode input of its own (`academic-paper/agents/intake_agent.md`, Step 6:
-  Bilingual / EN only / zh-TW only). `output_language_pair` never encodes cardinality.
-- **One default entry.** The default entry is the legacy behaviour: Traditional Chinese
+  Bilingual / EN only / Spanish only). `output_language_pair` never encodes cardinality.
+- **One default entry.** The default entry is the legacy behaviour: Spanish
   (L1) plus English (L2), the pair every pre-#862 run produced.
 
 ### Overlay boundary
@@ -52,7 +52,7 @@ the language roles, and the field semantics — not the figures.
 
 The figures have one home so that a paper type's length cannot drift between copies: the guide
 carries the reconciled table (Standard / Conference / Extended abstract / Dissertation rows for
-the default entry `zh-tw-en`), and `scripts/check_spec_consistency.py` asserts both that the
+the default entry `es-en`), and `scripts/check_spec_consistency.py` asserts both that the
 guide carries it and that this contract carries no competing copy.
 
 The figures apply whether or not the run declares `output_language_pair`; the field selects which
@@ -74,8 +74,8 @@ derived label.
 
 | Value | Result |
 |-------|--------|
-| key omitted | **Legacy behaviour** — the run renders the **default pair** (Traditional Chinese L1 + English L2), as every pre-#862 run did. Phase 1 holds three things fixed and claims exactly those: the legacy Schema-4 object keys, the legacy heading literals, and the omitted serialized key (*Absent field* below lists them). Absence is not an error, and omission *is* the legacy state — not a behaviour-equivalence claim about the rest of the run. |
-| `zh-tw-en` | Valid — the default entry: the pair every pre-#862 run produced, so a run that declares it changes no surface. |
+| key omitted | **Legacy behaviour** — the run renders the **default pair** (Spanish L1 + English L2), as every pre-#862 run did. Phase 1 holds three things fixed and claims exactly those: the legacy Schema-4 object keys, the legacy heading literals, and the omitted serialized key (*Absent field* below lists them). Absence is not an error, and omission *is* the legacy state — not a behaviour-equivalence claim about the rest of the run. |
+| `es-en` | Valid — the default entry: the pair every pre-#862 run produced, so a run that declares it changes no surface. |
 | any other string | **Visible failure**: the step aborts, naming this registry and the unsupported value. There is no silent fallback to the default. |
 | non-string, `null`, or empty string | **Visible failure**: the same abort, naming this registry. A present-but-unusable value is never treated as absent. |
 
@@ -110,9 +110,9 @@ happen.
 ### Absent field: the legacy literals are reproduced exactly
 
 With the key omitted, three things reproduce exactly: the Schema-4 legacy object keys
-(`abstract: {english, chinese}`, `keywords: {en, zh_tw}`), the heading literals
-(`### English Abstract`, `### Chinese Abstract`, `## English Abstract`,
-`## Chinese Abstract (zh-TW)`), and the omitted serialized key. That list is the whole of the
+(`abstract: {english, spanish}`, `keywords: {en, es}`), the heading literals
+(`### English Abstract`, `### Spanish Abstract`, `## English Abstract`,
+`## Spanish Abstract (es)`), and the omitted serialized key. That list is the whole of the
 Phase-1 equivalence claim, and it is a **file-level literal** claim about the default pair — not
 a claim that a rendered document is byte-identical, and not a claim about model behaviour. The
 migration is additive: absence is a valid legacy state, not a gap to repair.
@@ -124,8 +124,8 @@ declaration site. A handoff whose sites disagree — the run configuration carry
 while the dispatched context or the Schema-4 handoff carries another — stops and names both values;
 no site wins silently.
 
-A pair whose L1 language is not the legacy Traditional Chinese cannot coexist with the legacy
-object keys (`abstract: {english, chinese}`, `keywords: {en, zh_tw}`): those key names describe
+A pair whose L1 language is not the legacy Spanish cannot coexist with the legacy
+object keys (`abstract: {english, spanish}`, `keywords: {en, es}`): those key names describe
 the default pair's languages only. A handoff that declares a non-default pair while still
 carrying them is a conflict and fails visibly. Phase 1 cannot reach that state — the registry
 holds one entry — and the rule exists so that a Phase-2 entry cannot silently render the

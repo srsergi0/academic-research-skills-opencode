@@ -68,7 +68,7 @@ Wei-Ting Lin: Investigation, Validation, Writing – review & editing.
 
 ---
 
-## Step 4: Output — Chinese CRediT Statement
+## Step 4: Output — Spanish CRediT Statement
 
 ```
 Author Contribution Statement:
@@ -77,7 +77,7 @@ Author Contribution Statement:
 [Author 3 Name]: [Role 1], [Role 2], [Role 3].
 ```
 
-### Example (Chinese)
+### Example (Spanish)
 
 ```
 Author Contribution Statement:
@@ -100,7 +100,7 @@ If applicable, add one of the following:
 share first authorship.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 [Author 1 Name] and [Author 2 Name] contributed equally to this work and
 share first authorship.

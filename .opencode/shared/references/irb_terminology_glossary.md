@@ -196,7 +196,7 @@ consumer scopes, and authority anchor.
 | Drafting question | Exact bounded requirement pointer(s) |
 |---|---|
 | U.S. Common Rule participant consent | `us.45cfr46.116.informed-consent` |
-| Taiwan Human Subjects Research Act participant information | `tw.hsra.article-14.consent-information` |
+| Spain Ley 14/2007 participant information | `es.libi.consent-information` |
 | GDPR lawful-basis record | `eu.gdpr.article-6.lawful-basis` |
 | GDPR special-category condition/safeguards | `eu.gdpr.article-9.special-category-research` |
 | GDPR information for direct collection | `eu.gdpr.article-13.direct-collection-information` |

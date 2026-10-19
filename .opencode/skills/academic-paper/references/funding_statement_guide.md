@@ -8,6 +8,22 @@ A funding statement is a mandatory declaration in academic papers. Whether or no
 
 ---
 
+## Spain Funding Agency Formats
+
+### 1. AEI / Ministerio de Ciencia, Innovación y Universidades (MICIU)
+
+Standard acknowledgement (adjust reference code):
+
+> This work was supported by the Ministerio de Ciencia, Innovación y Universidades / Agencia Estatal de Investigación / 10.13039/501100011033 / (reference PID2023-XXXXXX-NB-I00).
+
+Spanish version:
+
+> Este trabajo ha sido financiado por el Ministerio de Ciencia, Innovación y Universidades / Agencia Estatal de Investigación / 10.13039/501100011033 / (referencia PID2023-XXXXXX-NB-I00).
+
+### 2. NextGenerationEU / Plan de Recuperación (PRTR)
+
+> Funded by the European Union – NextGenerationEU through the Plan de Recuperación, Transformación y Resiliencia.
+
 ## Taiwan Funding Agency Formats
 
 ### 1. NSTC (National Science and Technology Council)
@@ -39,7 +55,7 @@ This work was supported by the National Science and Technology Council, Taiwan
 (Grant No. NSTC 113-2410-H-003-001).
 ```
 
-**Chinese Format Example**:
+**Spanish Format Example**:
 ```
 This research was supported by a research project grant from the National Science and
 Technology Council (Grant No.: NSTC 113-2410-H-003-001). We hereby express our gratitude.
@@ -68,7 +84,7 @@ This work was supported by the Ministry of Education, Taiwan, through the
 Higher Education Sprout Project (Grant No. MOE-113-S-0023).
 ```
 
-**Chinese Format Example**:
+**Spanish Format Example**:
 ```
 This research was supported by the Ministry of Education Higher Education Sprout Project
 (Grant No.: MOE-113-S-0023). We hereby express our gratitude.
@@ -91,7 +107,7 @@ This work was supported by a research grant from [University Name]
 (Grant No. [Institutional Number]).
 ```
 
-**Chinese Format Example**:
+**Spanish Format Example**:
 ```
 This research was supported by an internal research grant from [University Name]
 (Grant No.: [Institutional Number]). We hereby express our gratitude.
@@ -150,7 +166,7 @@ Funding: This work was supported by the [Funder Full Name] [Grant Type]
 (Grant No. [Number]).
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Funding: This research was supported by the [Funder Full Name] [Grant Type]
 (Grant No.: [Number]). We hereby express our gratitude.
@@ -164,7 +180,7 @@ Funding: This work was supported by the [Funder 1] (Grant No. [Number 1]);
 the [Funder 2] (Grant No. [Number 2]); and the [Funder 3] (Grant No. [Number 3]).
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Funding: This research was supported by the following grants:
 (1) [Funder 1] (Grant No.: [Number 1]);
@@ -181,7 +197,7 @@ Funding: This research received no specific grant from any funding agency in
 the public, commercial, or not-for-profit sectors.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Funding: This research did not receive any specific grant from public,
 commercial, or not-for-profit funding agencies.
@@ -196,7 +212,7 @@ The funder had no role in study design, data collection and analysis, decision
 to publish, or preparation of the manuscript.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Funding: This research was partially supported by [Funder] (Grant No.: [Number]).
 The funder had no involvement in the design, data collection and analysis,
@@ -226,7 +242,7 @@ financial interests or personal relationships that could have appeared to
 influence the work reported in this paper.
 ```
 
-**No Conflict of Interest** (Chinese):
+**No Conflict of Interest** (Spanish):
 ```
 Declaration of Interest: All authors declare that, with respect to the research
 reported in this paper, there are no known competing financial interests or
@@ -263,8 +279,8 @@ authors declare no competing interests.
 | *Studies in Higher Education* | Taylor & Francis "Disclosure statement" |
 | *Research in Higher Education* | Springer "Declarations" format |
 | *Quality in Higher Education* | Taylor & Francis "Disclosure statement" |
-| Journal of Research in Education Sciences (Jiao Yu Ke Xue Yan Jiu Qi Kan) | Chinese format, stated in the acknowledgments section |
-| Higher Education Review (Gao Deng Jiao Yu) | Chinese format, stated in the acknowledgments section |
+| Journal of Research in Education Sciences (Jiao Yu Ke Xue Yan Jiu Qi Kan) | Spanish format, stated in the acknowledgments section |
+| Higher Education Review (Gao Deng Jiao Yu) | Spanish format, stated in the acknowledgments section |
 
 ---
 
@@ -277,7 +293,7 @@ authors declare no competing interests.
    - Before July 2022: `MOST [Year]-[Discipline]-[Category]-[Serial]`
    - After July 2022: `NSTC [Year]-[Discipline]-[Category]-[Serial]`
    - Use the agency name at the time the grant was approved when citing
-3. **Both Chinese and English declarations required**: If the paper is in English, use English for the funding statement; if in Chinese, use Chinese
+3. **Both Spanish and English declarations required**: If the paper is in English, use English for the funding statement; if in Spanish, use Spanish
 4. **Open Access fees**: If APC is paid from grant funds, some journals require additional explanation
 
 ### MOE Grant Requirements
@@ -305,7 +321,7 @@ Regulations vary by institution. Recommendations:
 - [ ] If no funding, explicitly declare "no funding"
 - [ ] If the funding agency requires a specific disclaimer, it has been quoted verbatim
 - [ ] Funding statement and COI statement are stated separately
-- [ ] English papers use English statements; Chinese papers use Chinese statements
+- [ ] English papers use English statements; Spanish papers use Spanish statements
 - [ ] Multiple funding sources have been ordered by significance or alphabetically
 - [ ] Funder names reflect the official name at the time the grant was approved
 

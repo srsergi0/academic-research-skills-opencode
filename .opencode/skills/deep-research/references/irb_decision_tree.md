@@ -59,7 +59,7 @@ catalogue identifiers. A missing value is unknown, not false.
 |---|---|
 | `activity.human_subjects` | Has the author confirmed that the activity involves human subjects? |
 | `support.us_hhs_or_common_rule` | Has the author identified a U.S. HHS/Common Rule scope basis? |
-| `scope.tw_hsra` | Has the author identified Taiwan's Human Subjects Research Act as a review authority? |
+| `scope.es_libi` | Has the author identified Ley 14/2007 de Investigación biomédica as a review authority? |
 | `scope.eu_gdpr` | Has the author identified the GDPR as a data-protection authority? |
 | `processing.personal_data` | Within the selected GDPR scope, does the activity process personal data? |
 | `data.special_category` | Does that processing include special-category data? |
@@ -131,12 +131,12 @@ registry, not for the underlying authorities.
 |---|---|---|---|---|---|
 | `us.45cfr46.107.irb-composition` | `45 CFR 46.107` | `institution_or_irb` | `["committee_governance", "pathway_trace"]` | IRB membership and composition | [45 CFR 46.107](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.107) |
 | `us.45cfr46.116.informed-consent` | `45 CFR 46.116` | `investigator_and_irb` | `["participant_information", "submission_packet", "pathway_trace"]` | General informed-consent requirements | [45 CFR 46.116](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.116) |
-| `tw.hsra.article-7.committee-composition` | `人體研究法第 7 條` | `research_institution_or_review_committee` | `["committee_governance", "pathway_trace"]` | Review-committee composition | [人體研究法第 7 條（全國法規資料庫中文控制文本）](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020176) |
-| `tw.hsra.article-14.consent-information` | `人體研究法第 14 條` | `principal_investigator` | `["participant_information", "submission_packet", "pathway_trace"]` | Information explained before consent | [人體研究法第 14 條（全國法規資料庫中文控制文本）](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=L0020176) |
+| `es.libi.cei-composition` | `Ley 14/2007, art. 12` | `research_institution_or_review_committee` | `["committee_governance", "pathway_trace"]` | Composition of the Research Ethics Committee (CEIm) | [Ley 14/2007, art. 12](https://www.boe.es/buscar/act.php?id=BOE-A-2007-12945) |
+| `es.libi.consent-information` | `Ley 14/2007, art. 4` | `principal_investigator` | `["participant_information", "submission_packet", "pathway_trace"]` | Information explained before consent | [Ley 14/2007, art. 4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-12945) |
 
 Committee-composition rows belong to their stated institutional/committee
 actors. This aid must not turn them into investigator submission-packet
-requirements. The U.S. and Taiwan rows remain parallel and retain their own
+requirements. The U.S. and Spanish rows remain parallel and retain their own
 vocabulary; neither is a translation of the other.
 
 ### 2.2 Data-protection axis
@@ -157,9 +157,9 @@ or Article 9 condition, identify a Member State law, or authorize processing.
 
 ## 3. Illustrative Country and Institution Planning
 
-### 3.1 Taiwan institutional-workflow example — illustrative and unprofiled
+### 3.1 Spain institutional-workflow example — illustrative and unprofiled
 
-For a project connected with Taiwan, a useful planning conversation may ask:
+For a project connected with Spain, a useful planning conversation may ask:
 
 1. Which institution or review committee owns the determination?
 2. Which local submission system and current forms does it use?
@@ -169,13 +169,12 @@ For a project connected with Taiwan, a useful planning conversation may ask:
 5. What current turnaround estimate, amendment process, continuing-reporting
    schedule, and closure process does the institution state?
 
-These are **questions, not Taiwan legal requirements**. The current #666 Taiwan
-profile covers only `tw.hsra.article-7.committee-composition` and
-`tw.hsra.article-14.consent-information`. It does not profile NSTC or Ministry
-of Education funding rules, the Personal Data Protection Act, clinical-trial or
+These are **questions, not Spanish legal requirements**. The current #666 Spain
+profile covers only `es.libi.cei-composition` and
+`es.libi.consent-information`. It does not profile AEI funding rules, the LOPDGDD, clinical-trial (RD 1090/2015) or
 biobank rules, training credentials, submission platforms, timelines, periodic
 reports, or a local pathway taxonomy. Record any such item as `unprofiled` and
-obtain the responsible authority's current instruction. Do not rename a Taiwan
+obtain the responsible authority's current instruction. Do not rename a Spain
 process with U.S. pathway vocabulary.
 
 ### 3.2 Higher-education scenarios — illustrative fact prompts
@@ -204,7 +203,7 @@ There is no universal consent-element checklist in this aid. When the applicable
 row resolves true, use its exact pointer and full registry row:
 
 - `us.45cfr46.116.informed-consent` for the bounded U.S. Common Rule consent row;
-- `tw.hsra.article-14.consent-information` for the bounded Taiwan Article 14
+- `es.libi.consent-information` for the bounded Spain Ley 14/2007 Article 4
   information row;
 - `eu.gdpr.article-13.direct-collection-information` when the selected GDPR
   context says personal data is obtained from the data subject;

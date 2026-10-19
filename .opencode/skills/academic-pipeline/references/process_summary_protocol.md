@@ -8,7 +8,7 @@
 ```
 1. Ask user language preference:
    "Which language version of the process record would you like to generate first?"
-   - Chinese (Traditional Chinese)
+   - Spanish (Spanish)
    - English
    - Both (default: generate the user's primary conversation language first)
    Ask in the same question whether to add a PDF. An active standing constraint
@@ -38,7 +38,7 @@
    - pandoc MD -> LaTeX body
    - Package complete LaTeX document (with cover page, table of contents, headers/footers)
    - tectonic compile PDF
-   - Chinese version requires xeCJK + Source Han Serif TC VF
+   - Spanish version requires babel spanish + T1 fonts (tectonic default; no special engine stack)
 
 5. Terminal acknowledgement (pipeline terminal checkpoint):
    - After delivering the process record, prompt the user to close the pipeline.
@@ -207,9 +207,9 @@ For dimensions with no findings, state the null result in one sentence. Expand o
 
 ## Output Specifications
 
-- **Filename**: `paper_creation_process.md` (Chinese) / `paper_creation_process_en.md` (English)
+- **Filename**: `paper_creation_process.md` (Spanish) / `paper_creation_process_en.md` (English)
 - **PDF** (when asked for): `paper_creation_process_zh.pdf` / `paper_creation_process_en.pdf`
-- **LaTeX template**: `article` class, 12pt, A4, Times New Roman + Source Han Serif TC VF
+- **LaTeX template**: `article` class, 12pt, A4, Times New Roman + TeX Gyre Termes
 - **Includes table of contents**: `\tableofcontents`
 - **Header**: left = document title (italic), right = date
 - **Compilation**: tectonic (same toolchain as Stage 5)

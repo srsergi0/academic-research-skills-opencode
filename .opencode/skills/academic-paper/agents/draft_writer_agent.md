@@ -208,10 +208,11 @@ Recommended drafting order (not mandatory): Introduction first (sets tone), then
 
 Register cues by discipline are in *Discipline-Specific Adjustments* above; do not restate them here.
 
-**Additional rules for Chinese academic register**:
-- Use "this study" rather than "we"
-- Avoid colloquial expressions ("a lot" -> "a substantial amount", "not so good" -> "limited effectiveness")
-- Use precise numbers + trend words for data descriptions ("shows an upward trend", "reaches statistical significance")
+**Additional rules for Spanish academic register**:
+- Use "este estudio" rather than "nosotros" in formal register
+- Avoid colloquial expressions ("un montón" -> "una cantidad sustancial", "no tan bueno" -> "eficacia limitada")
+- Use precise numbers + trend words for data descriptions ("muestra una tendencia al alza", "alcanza significación estadística")
+- Keep accents and ñ (á, é, í, ó, ú, ü, ñ, ¿, ¡); never strip diacritics to "simplify"
 
 ### Citation Integration Strategy
 
@@ -222,15 +223,15 @@ Choose narrative / parenthetical / direct-quote forms per *Citation Integration*
 
 ### Transition Words and Phrases Guide
 
-| Function | English | Chinese |
+| Function | English | Spanish |
 |------|------|------|
-| Addition | Furthermore, Moreover, In addition | Furthermore, Additionally, Moreover |
-| Contrast | However, In contrast, Conversely | However, Conversely, On the contrary |
-| Cause-effect | Therefore, Consequently, As a result | Therefore, Hence, As a result |
-| Example | For instance, Specifically, In particular | For example, Specifically, In particular |
-| Summary | In summary, Overall, Taken together | In summary, Overall, In conclusion |
-| Temporal | Subsequently, Prior to, Following | Subsequently, Prior to, Following |
-| Concession | Although, Despite, Notwithstanding | Although, Despite, Even though |
+| Addition |Furthermore, Moreover, In addition| Además, Asimismo, Adicionalmente |
+| Contrast |However, In contrast, Conversely| Sin embargo, En cambio, Por el contrario |
+| Cause-effect |Therefore, Consequently, As a result| Por tanto, En consecuencia, Como resultado |
+| Example |For instance, Specifically, In particular| Por ejemplo, En concreto, En particular |
+| Summary |In summary, Overall, Taken together| En resumen, En conjunto, En conclusión |
+| Temporal |Subsequently, Prior to, Following| Posteriormente, Previamente, A continuación |
+| Concession |Although, Despite, Notwithstanding| Aunque, A pesar de, No obstante |
 
 **Usage rules**:
 - Let topic sentences carry paragraph-to-paragraph flow; reach for a transition word only when the relationship is non-obvious
@@ -332,7 +333,7 @@ Quality gate not passed ->
 | Theoretical | TEEL Evidence focuses on theoretical literature rather than empirical data; Explanation emphasizes logical reasoning |
 | Case study | Results section uses descriptive narrative; include contextual description |
 | Policy brief | Register tilts toward decision-maker readability; reduce academic jargon; increase practical recommendations |
-| Chinese paper | Paragraph structure can be slightly flexible (Chinese academic convention allows longer paragraphs); citation integration uses Chinese format |
+| Spanish paper | Paragraph structure can be slightly flexible (Spanish academic convention allows longer paragraphs); citation integration uses Spanish APA format |
 
 ## Collaboration Rules with Other Agents
 
@@ -367,7 +368,7 @@ Schema 4 (`## Schema 4: Paper Draft` in `shared/handoff_schemas.md`) is this age
 
 - **When the PCR (or the dispatch context) carries `output_language_pair`**: serialize it into the Schema 4 handoff under that exact key, with the token as its string value. Take the token **verbatim** — it is an opaque registry token from `shared/output_language_pair.md`. Never normalize it to a locale code, never wrap it in an array, never substitute a derived language label, and never rewrite it.
 - **When the field is absent from the PCR/dispatch context**: **omit the serialized key entirely**. Do not emit it as `null`, as `""`, or as the default token. Absence is the legacy state, and what stays put is exact: the omitted key, the legacy object keys, and the heading literals — so a pre-#862 handoff keeps the same keys, headings, and serialized shape, and every downstream step then omits the value too.
-- **Legacy keys are untouched**: `abstract: {english, chinese}` and `keywords: {en, zh_tw}` keep their current names and shapes. The pair does not rename them; under the default pair the rendered headings remain `### English Abstract` and `### Chinese Abstract`.
+- **Legacy keys are untouched**: `abstract: {english, spanish}` and `keywords: {en, es}` keep their current names and shapes. The pair does not rename them; under the default pair the rendered headings remain `### English Abstract` and `### Spanish Abstract`.
 - **Invalid values fail visibly**: an unsupported token, a non-string value, `null`, or an empty string stops the handoff and names the registry. Never fall back to the default silently.
 
 ## Quality Criteria

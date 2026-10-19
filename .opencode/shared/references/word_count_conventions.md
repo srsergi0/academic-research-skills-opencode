@@ -17,7 +17,7 @@ ARS pipelines count words as `len(body.split())` in Python — that is, splits o
 1. **Reproducible.** Anyone running `len(body.split())` on the same UTF-8 text gets the same number. No hidden tokenizer state.
 2. **Matches Microsoft Word default.** Most authors check word count in Word, which uses a whitespace-equivalent algorithm. Aligning with the dominant authoring environment minimises surprise.
 3. **Conservative under hyphenation.** "State-of-the-art" counts as 1 token under whitespace-split. Under hyphenated-as-N this would count as 4. Whitespace-split therefore systematically reports a lower total than hyphenated-as-N — which is the safer direction when chasing a hard cap.
-4. **Language-neutral.** CJK text without spaces is a separate problem (see "Non-space-delimited languages" below), but for English / European languages, whitespace-split is the universal lower bound.
+4. **Language-neutral.** Text in scripts without word delimiters is a separate problem (see "Non-space-delimited languages" below), but for English / European languages, whitespace-split is the universal lower bound.
 
 ### What whitespace-split counts
 

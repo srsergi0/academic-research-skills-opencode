@@ -101,7 +101,7 @@ Most strong empirical titles carry: **key concept** (front-loaded) + **specifics
 
 | Weak | Stronger | Why |
 |------|----------|-----|
-| "A Study of AI and Higher Education" | "Generative AI in Programme-Level Quality Assurance: Evidence from 42 Taiwanese Universities" | Names the mechanism, population, and evidence base; survives the fifty-papers test |
+| "A Study of AI and Higher Education" | "Generative AI in Programme-Level Quality Assurance: Evidence from 42 Spanish Universities" | Names the mechanism, population, and evidence base; survives the fifty-papers test |
 | "Exploring the Impact of Feedback on Learning" | "Rubric-Anchored Peer Feedback and Revision Depth in First-Year Writing" | Replaces shell verbs with the actual instrument and outcome |
 | "Toward a Framework for Teacher Wellbeing" | "Workload Rhythm, Not Workload Volume, Predicts Teacher Burnout: A Nine-Month Diary Study" | Declarative form carried by a design that can support it |
 

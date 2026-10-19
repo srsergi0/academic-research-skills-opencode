@@ -48,7 +48,7 @@ Funding: This work was supported by the [Funder Full Name]
 and analysis, decision to publish, or preparation of the manuscript.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Funding: This research was supported by the [Funder Full Name] [Grant Type]
 (Grant No.: [Number]). The funder had no involvement in the design, data
@@ -66,7 +66,7 @@ the [Funder 2] (Grant No. [Number 2]); and the [Funder 3]
 collection and analysis, decision to publish, or preparation of the manuscript.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Funding: This research was supported by the following grants:
 (1) [Funder 1] [Grant Type] (Grant No.: [Number 1]);
@@ -84,7 +84,7 @@ Funding: This research received no specific grant from any funding agency in
 the public, commercial, or not-for-profit sectors.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Funding: This research did not receive any specific grant from public,
 commercial, or not-for-profit funding agencies.
@@ -99,7 +99,7 @@ Funding: This work was partially supported by the [Funder]
 and analysis, decision to publish, or preparation of the manuscript.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Funding: This research was partially supported by [Funder] (Grant No.: [Number]).
 The funder had no involvement in the design, data collection and analysis,
@@ -119,7 +119,7 @@ financial interests or personal relationships that could have appeared to
 influence the work reported in this paper.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Declaration of Interest: All authors declare that, with respect to the research
 reported in this paper, there are no known competing financial interests or
@@ -136,7 +136,7 @@ research grants / consulting fees / speaker honoraria] from [Organization].
 [Organization/Journal]. The remaining authors declare no competing interests.
 ```
 
-**Chinese**:
+**Spanish**:
 ```
 Declaration of Interest: [Author Name] has received [research grants / consulting
 fees / speaker honoraria] from [Organization Name]. [Author Name] serves on the
@@ -145,6 +145,12 @@ authors declare no competing interests.
 ```
 
 ---
+
+## Step 4b: Spain-Specific Requirements
+
+- AEI grants: Ministerio de Ciencia, Innovación y Universidades / Agencia Estatal de Investigación / 10.13039/501100011033 / (referencia PID...) — keep the ROR and the full reference code.
+- PRTR/NextGenerationEU: add the EU funding sentence above the AEI line.
+- Regional grants: name the community and programme (e.g., Junta de Andalucía, Generalitat Valenciana) with its reference code.
 
 ## Step 5: Taiwan-Specific Requirements
 

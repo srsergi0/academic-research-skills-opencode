@@ -117,7 +117,7 @@ Preferred behavior:
 ### 4. PDF (via LaTeX or Pandoc)
 - Provide LaTeX source that compiles to PDF
 - Or provide Pandoc command: `pandoc input.md -o output.pdf --pdf-engine=xelatex`
-- For zh-TW content: use XeLaTeX with CJK font support
+- For Spanish content: standard engines suffice (tectonic default via tachyon-tex-cli in this port); add `\usepackage[spanish]{babel}` + T1 fontenc. No Asian-script engine stack needed.
 
 ### 5. Combined (All formats)
 - Generate Markdown + LaTeX + conversion instructions for DOCX and PDF
@@ -189,7 +189,7 @@ fix the profile** rather than rendering under an ambiguous contract:
   (field + target + reason) rather than silently dropping it.
 - Field map: `body_font` → body text family/size; `caption` → figure/table caption
   font/size/placement/alignment, with `latin_font_family` applied to Latin-script tokens
-  (e.g. "Fig.") inside an otherwise-CJK caption; `line_spacing` → single/onehalf/double, or
+  (e.g. "Fig.") inside an otherwise-Spanish caption; `line_spacing` → single/onehalf/double, or
   a fixed point value when `mode == fixed_pt`; `margins_cm` → page margins (centimeters);
   `table_border_style` → `three_line` (booktabs-style) / `full_grid` / `none`.
 
@@ -530,14 +530,14 @@ NOT a refusal rule: this agent stays stamp-only (Invariant 13) — it never re-r
 | Citation Style | [APA 7th / Chicago / MLA / IEEE / Vancouver] |
 | Target Journal | [name or "General"] |
 | Word Count | [N] words |
-| Language | [EN / zh-TW / Bilingual] |
+| Language | [EN / es / Bilingual] |
 
 ### Final Quality Checklist
 [Completed checklist with all items checked]
 
 ### Conversion Commands (if applicable)
 - DOCX: `pandoc paper.md -o paper.docx --reference-doc=template.docx`
-- PDF: `pandoc paper.md -o paper.pdf --pdf-engine=xelatex -V CJKmainfont="Noto Sans CJK TC"`
+- PDF: compile the `.tex` with tachyon-tex-cli (`/ars-pdf`, default in this port) or `pandoc paper.md -o paper.pdf --pdf-engine=xelatex -V mainfont="TeX Gyre Termes"`
 ```
 
 ## Detailed Execution Algorithm
@@ -616,7 +616,7 @@ Step 6: Package Output
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,graphicx,hyperref,booktabs}
 \usepackage[style=apa,backend=biber]{biblatex}
-% IF zh-TW content -> add xeCJK (see Chinese settings below)
+% IF Spanish content -> add babel spanish (see Spanish settings below)
 \addbibresource{references.bib}
 
 \title{Paper Title}
@@ -646,21 +646,21 @@ pandoc paper.md -o paper.docx \
   --bibliography=references.bib \
   --csl=apa-7th.csl
 
-# Chinese content
+# Spanish content
 pandoc paper.md -o paper.docx \
-  --reference-doc=template_zh.docx \
+  --reference-doc=template_es.docx \
   --pdf-engine=xelatex \
-  -V CJKmainfont="Noto Sans CJK TC"
+  -V mainfont="TeX Gyre Termes"
 ```
 
 **Style Mapping (Markdown -> Word Styles)**:
 
 | Markdown | Word Style | Font/Size Recommendation |
 |----------|-----------|-------------|
-| `# H1` | Heading 1 | Times New Roman 16pt Bold / DFKai-SB 16pt Bold |
-| `## H2` | Heading 2 | Times New Roman 14pt Bold / DFKai-SB 14pt Bold |
-| `### H3` | Heading 3 | Times New Roman 12pt Bold / DFKai-SB 12pt Bold |
-| Body text | Normal | Times New Roman 12pt / DFKai-SB 12pt |
+| `# H1` | Heading 1 | Times New Roman 16pt Bold / TeX Gyre Termes 16pt Bold |
+| `## H2` | Heading 2 | Times New Roman 14pt Bold / TeX Gyre Termes 14pt Bold |
+| `### H3` | Heading 3 | Times New Roman 12pt Bold / TeX Gyre Termes 12pt Bold |
+| Body text | Normal | Times New Roman 12pt / TeX Gyre Termes 12pt |
 | `> quote` | Block Quote | Indented 0.5", italic |
 | Table | Table Grid | |
 | Reference | Bibliography | Hanging indent 0.5" |
@@ -669,7 +669,7 @@ pandoc paper.md -o paper.docx \
 - Margins: 1 inch (2.54 cm) on all sides
 - Line spacing: Double-spaced (APA) or 1.5 spacing (per journal)
 - Page numbers: Top right
-- Font: English Times New Roman 12pt / Chinese DFKai-SB 12pt
+- Font: English Times New Roman 12pt / Spanish TeX Gyre Termes 12pt
 
 ### APA 7.0 LaTeX (`apa7` Class) — Mandatory Rules
 
@@ -682,12 +682,11 @@ When the output format is APA 7.0 LaTeX, the formatter **MUST** use the `apa7` d
 - `man` mode = manuscript format (double-spaced, running head)
 - `man` mode forces `\raggedright` after `\begin{document}` — must override (see below)
 
-**Font stack** (XeTeX required):
+**Font stack** (XeTeX or pdfLaTeX):
 ```latex
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
-\usepackage{xeCJK}
-\setCJKmainfont{Source Han Serif TC VF}
+\usepackage[spanish]{babel}
 \setmonofont{Courier New}
 ```
 
@@ -761,37 +760,28 @@ tectonic paper.tex
 ```
 - If verbatim content exceeds page width, use `fontsize=\small` or `\footnotesize`
 
-### Chinese LaTeX Compilation Settings
+### Spanish LaTeX Compilation Settings
 
 ```latex
-% === Required Chinese LaTeX Settings ===
-\usepackage{xeCJK}
+% === Required Spanish LaTeX Settings ===
+\usepackage[spanish]{babel}
 
-% Font selection (depends on system-available fonts):
-% macOS:
-\setCJKmainfont{Songti TC}           % Body text: Song typeface
-\setCJKsansfont{PingFang TC}         % Sans-serif: PingFang
-\setCJKmonofont{STFangsong}          % Monospace: Fangsong
+% Font selection (T1 + Latin Modern):
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
-% Windows:
-% \setCJKmainfont{DFKai-SB}          % DFKai-SB
-% \setCJKsansfont{Microsoft JhengHei} % Microsoft JhengHei
-
-% Linux:
-% \setCJKmainfont{Noto Serif CJK TC}
-% \setCJKsansfont{Noto Sans CJK TC}
-
-% Compilation commands (must use xelatex or lualatex):
+% Compilation commands (tectonic default in this port, or xelatex/lualatex):
+% npx --yes github:srsergi0/tachyon-tex-cli paper.tex   % preferred
 % xelatex paper.tex
 % biber paper
 % xelatex paper.tex
 % xelatex paper.tex (3 times total, to ensure citations and TOC are correct)
 ```
 
-**Common Chinese LaTeX issues**:
-- Chinese-English mixed text: English font auto-fallback -> need to set `\setmainfont{Times New Roman}`
-- Chinese punctuation at line start/end -> `xeCJK` handles this by default
-- Section numbering in Chinese -> `\renewcommand{\thesection}{Chapter \chinese{section}}` (optional)
+**Common Spanish LaTeX issues**:
+- Spanish-English mixed text: single Latin font covers both; keep `\setmainfont{Times New Roman}` for XeLaTeX
+- Accents and \u00f1 must render; `babel spanish` + T1 handles this by default
+- Section numbering in Spanish -> `\renewcommand{\thesection}{Cap\u00edtulo \arabic{section}}` (optional)
 
 ### Journal Submission Format Adjustment Checklist
 
@@ -905,7 +895,7 @@ Known journal -> use pre-stored template
 ├── IEEE journals -> IEEEtran.cls
 ├── ACM journals -> acmart.cls
 ├── MDPI journals -> mdpi.cls
-└── Chinese journals (TSSCI, etc.) -> generic article.cls + xeCJK
+└── Spanish-language journals (Latindex, SciELO, Dialnet, etc.) -> generic article.cls + babel spanish
 
 Unknown journal ->
   Step 1: Use generic article.cls
@@ -916,9 +906,9 @@ Template conflict handling:
   - IF journal template's citation format != paper's selected format
     -> Prioritize journal template (journal requirement > user preference)
     -> Explain format change in Output Package
-  - IF journal template does not support Chinese
+  - IF journal template lacks Spanish support
     -> Provide alternative (e.g., DOCX format)
-    -> Or manually add xeCJK settings
+    -> Or manually add babel spanish settings
 ```
 
 ## Quality Gates
@@ -951,10 +941,10 @@ Quality gate not passed ->
 │   1. List specific non-compliant items
 │   2. IF auto-fixable -> fix
 │   3. IF requires user judgment (e.g., word limit exceeded) -> flag as reminder
-└── Chinese compilation issues ->
-    1. Verify xeCJK package is loaded
+└── Spanish compilation issues ->
+    1. Verify babel spanish + T1 fontenc are loaded and accents render
     2. Verify font paths are correct
-    3. Verify using xelatex (not pdflatex)
+    3. Prefer tectonic via tachyon-tex-cli (`/ars-pdf`)
 ```
 
 ## Edge Case Handling
@@ -982,7 +972,7 @@ Quality gate not passed ->
 | Conference paper | Typically requires 2-column layout (LaTeX: `\documentclass[twocolumn]`); font may be smaller (10pt) |
 | Policy brief | Does not use standard academic format; may add sidebars, callout boxes; more flexible page layout |
 | Thesis chapter | Must comply with university format guidelines; typically has cover page, table of contents, acknowledgments, and other additional elements |
-| Chinese paper for international journal | Main text uses English LaTeX; attach Chinese abstract as Supplementary Material |
+| Spanish paper for international journal | Main text uses English LaTeX; attach Spanish abstract as Supplementary Material |
 
 ## Collaboration Rules with Other Agents
 
@@ -992,7 +982,7 @@ Quality gate not passed ->
 |-----------|---------|---------|
 | `draft_writer_agent` | Final Reviewed Draft | Markdown full text (passed peer review) |
 | `citation_compliance_agent` | Corrected Reference List + Citation Audit Report | Markdown Reference List + Audit table |
-| `abstract_bilingual_agent` | Bilingual Abstracts + Keywords | Markdown (EN + zh-TW) |
+| `abstract_bilingual_agent` | Bilingual Abstracts + Keywords | Markdown (EN + es) |
 | `intake_agent` | Paper Configuration Record | Markdown table (output_format, target_journal, language) |
 | `peer_reviewer_agent` | Final Verdict (Accept) | Verdict confirmation |
 
@@ -1007,7 +997,7 @@ Quality gate not passed ->
 ### Handoff Format Requirements
 
 - **Receiving citation_compliance_agent's Corrected Reference List**: Must be the final version; formatter does not modify citation content, only performs format conversion
-- **Receiving abstract_bilingual_agent's Abstracts**: EN and zh-TW abstracts are inserted as independent blocks; content is not modified
+- **Receiving abstract_bilingual_agent's Abstracts**: EN and es abstracts are inserted as independent blocks; content is not modified
 - **Final Reviewed Draft status confirmation**: Phase 7 must start only after peer_reviewer_agent gives an Accept verdict (unless user explicitly requests early formatting)
 
 ## Quality Criteria

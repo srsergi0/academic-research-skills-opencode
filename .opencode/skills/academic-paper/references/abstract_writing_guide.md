@@ -17,16 +17,16 @@ apply whether or not the run declares `output_language_pair`: that field selects
 the abstract surfaces use, not which figures apply.
 
 <!-- abstract-regime-table:start -->
-| Paper type | L1 abstract (`zh-TW`, CJK) | L2 abstract (`en`) | Keywords per language |
+| Paper type | L1 abstract (`es`, Latin) | L2 abstract (`en`) | Keywords per language |
 |------------|---------------------------|--------------------|-----------------------|
-| Standard | 300–500 characters | 150–250 words | 5–7 |
-| Conference | 300–800 characters | 200–500 words | 5–7 |
+| Standard | 300–500 words | 150–250 words | 5–7 |
+| Conference | 300–800 words | 200–500 words | 5–7 |
 | Extended abstract | not declared | 500–1,000 words | not declared |
-| Dissertation | 500–1,000 characters | up to 350 words | 5–7 |
+| Dissertation | 500–1,000 words | up to 350 words | 5–7 |
 <!-- abstract-regime-table:end -->
 
 Read the row for the run's paper type and the run's declared output language pair (default
-`zh-tw-en`): both the L1 and L2 columns apply, and the keyword count applies per language.
+`es-en`): both the L1 and L2 columns apply, and the keyword count applies per language.
 Lengths are measured per [`shared/references/word_count_conventions.md`](../../shared/references/word_count_conventions.md)
 — whitespace splitting, ARS-marker removal, and the 3–5% buffer rule. That reference is
 pointed at, never replaced. A venue-declared limit (#394 venue profile) takes precedence over
@@ -47,18 +47,18 @@ rather than inventing one. A conference *paper*'s abstract is the shorter **Conf
 
 **Reconciliation.** The rows above are one table, not two per-language bullet lists. This guide's
 pre-#862 lists (English Standard 150–250, Conference 200–500, Dissertation up to 350 words;
-Traditional Chinese Standard 300–500, Conference 300–800, Dissertation 500–1,000 characters;
+Spanish Standard 300-500, Conference 300-800, Dissertation 500-1,000 words;
 keywords 5–7 per language) are folded into it, and so are two figures its own `Bilingual Abstract
 Quality Checklist` restated in conflict with the Standard row (English 150–300 words; a keywords
 5–7 restatement beside a keywords section that already said 5–7). The accumulated spread across
 the surfaces (150–250 vs 150–300 English words, a fixed 250 vs a range, 3–6 vs 5–7 keywords)
 resolves to this one table, not a vote among copies.
 
-The rows cover the default entry `zh-tw-en`. Phase 1 carries the regime rows for the default entry
+The rows cover the default entry `es-en`. Phase 1 carries the regime rows for the default entry
 only; a pack-supplied entry ships its own regime rows with the Phase-2 registry loader of
 [`shared/output_language_pair.md`](../../shared/output_language_pair.md), which carries the
 registry, the language roles, and the field semantics — not these figures. The writing-pattern
-examples further down are English- and Traditional-Chinese-language guidance and therefore apply
+examples further down are English- and Spanish-language guidance and therefore apply
 to the default pair.
 
 ## Abstract Types
@@ -141,11 +141,11 @@ State the significance, practical implications, or recommendations.
 
 ### Example (English, Education)
 
-> Declining enrollment poses existential challenges for private higher education institutions in Taiwan, yet institutional responses remain poorly understood. This study examines the strategic adaptation patterns of 12 private universities experiencing enrollment declines exceeding 20% between 2018 and 2023. Using a multiple case study design, we analyzed institutional documents, enrollment data, and 36 semi-structured interviews with administrators. Three distinct adaptation strategies emerged: program consolidation (n = 5), niche specialization (n = 4), and merger pursuit (n = 3). Institutions adopting niche specialization demonstrated the highest enrollment recovery rates (mean = 12.3%). However, successful adaptation was contingent upon early action — institutions that initiated strategic changes within two years of enrollment decline showed significantly better outcomes than late movers (p < .01). These findings suggest that private institutions should adopt proactive monitoring systems and consider niche specialization as a primary survival strategy.
+> Declining enrollment poses existential challenges for private higher education institutions in Spain, yet institutional responses remain poorly understood. This study examines the strategic adaptation patterns of 12 private universities experiencing enrollment declines exceeding 15 % between 2019 and 2024.
 >
-> **Keywords**: higher education, enrollment decline, private universities, institutional strategy, Taiwan
+> **Keywords**: higher education, enrollment decline, private universities, institutional strategy, Spain
 
-## Traditional Chinese Abstract Guidelines
+## Spanish Abstract Guidelines
 
 ### Word Count
 Same table above — row for the run's paper type, L1 column, for the run's declared pair. No
@@ -180,11 +180,11 @@ figure is restated here.
 - "This study has both theoretical and practical contributions to..."
 - "The results can serve as a reference for... and provide specific recommendations for..."
 
-### Example (Chinese, Higher Education Field)
+### Example (Spanish, Higher Education Field)
 
-> Amid the trend of declining birth rates, Taiwan's private universities face enrollment difficulties, yet existing research on institutional response strategies remains limited. This study aims to explore the strategic adaptation patterns of 12 private universities that experienced enrollment declines exceeding 20% between 2018 and 2023. The study employs a multiple case study design, analyzing institutional development plans, enrollment data, and conducting 36 semi-structured interviews with administrators. Three primary adaptation strategies were identified: program consolidation (5 institutions), niche specialization (4 institutions), and merger pursuit (3 institutions). Among these, institutions adopting niche specialization demonstrated the highest enrollment recovery rates (mean = 12.3%). The study also found that timing of adaptation is critical to success -- institutions that initiated strategic adjustments within two years of enrollment decline showed significantly better outcomes than late movers. The results suggest that private universities should establish proactive monitoring mechanisms and adopt niche specialization as a primary sustainability strategy.
+> En un contexto de descenso demográfico, las universidades privadas españolas afrontan dificultades de matrícula, pero la investigación sobre sus estrategias de respuesta sigue siendo limitada. Este estudio examina los patrones de adaptación estratégica de 12 universidades privadas con caídas de matrícula superiores al 15 % entre 2019 y 2024.
 >
-> **Keywords**: higher education, enrollment decline, private university, institutional strategy, Taiwan
+> **Palabras clave**: educación superior, descenso de matrícula, universidad privada, estrategia institucional, España
 
 ## Keywords Selection
 
@@ -200,7 +200,7 @@ figure is restated here.
 - Use established terms (check journal's keyword list if available)
 - Keyword count per language: the keywords column of the table above (not restated here)
 
-### Chinese Keywords
+### Spanish Keywords
 1. **Core concepts** — main variables or constructs (2-3)
 2. **Research context** — geographical, institutional, or temporal (1-2)
 3. **Research method** — if distinctive (0-1)
@@ -209,7 +209,7 @@ figure is restated here.
 **Rules**:
 - Use formal academic terminology
 - Avoid completely duplicating the title
-- May reference the National Central Library Chinese Subject Headings
+- May reference the National Central Library Spanish Subject Headings
 - The same declared keyword count as the other language (the keywords column of the table
   above)
 

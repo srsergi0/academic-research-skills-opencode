@@ -20,7 +20,7 @@ East Asian higher education systems face unprecedented enrollment challenges dri
 
 ---
 
-## Chinese Abstract
+## Spanish Abstract
 
 East Asian higher education systems face unprecedented enrollment challenges due to declining birth rates and demographic shifts. This paper employs a thematic literature review approach, synthesizing 58 peer-reviewed studies published between 2015 and 2025, covering institutional adaptation strategies in Taiwan, Japan, South Korea, and selected Southeast Asian countries. The review identifies three major themes: enrollment management innovation, program restructuring and niche specialization, and merger and exit mechanisms. Cross-thematic analysis reveals that institutions that proactively initiated strategic adjustments within two years of enrollment decline achieved significantly better outcomes than those that responded reactively. This paper also identifies several important research gaps: insufficient longitudinal studies on merger outcomes, limited attention to faculty impacts, and a near-absence of student perspective research. The findings suggest that policymakers should prioritize establishing early-warning systems and flexible regulatory frameworks, while researchers should adopt cross-national comparative designs to deepen understanding of adaptation dynamics.
 
@@ -94,7 +94,7 @@ Niche specialization — strategically narrowing an institution's academic focus
 
 Korean "specialization zones" (teukseunghwa) offer a policy-level approach to niche development. The Korean Ministry of Education designated regional specialization zones beginning in 2020, providing preferential funding and regulatory flexibility to universities that aligned their academic programs with regional industry clusters. Park and Shin (2024) evaluated 12 designated universities and found that enrollment in specialized programs increased by an average of 23%, while non-specialized programs at the same institutions continued to decline. However, the authors noted a selection effect: institutions selected for the program already had stronger leadership and clearer strategic visions, making it difficult to attribute success solely to the specialization zone policy.
 
-A contrasting perspective comes from Mok and Han (2023), who studied Hong Kong institutions that pursued specialization strategies in response to competitive pressures from mainland Chinese universities. They found that excessive specialization created vulnerability to industry cycle fluctuations — institutions heavily invested in financial technology programs experienced enrollment shocks when the fintech sector contracted in 2022-2023. Their analysis suggests an optimal specialization range of 40-60% of total programs in signature fields, with the remainder providing disciplinary diversity as a risk buffer.
+A contrasting perspective comes from Mok and Han (2023), who studied Hong Kong institutions that pursued specialization strategies in response to competitive pressures from mainland Spanish universities. They found that excessive specialization created vulnerability to industry cycle fluctuations — institutions heavily invested in financial technology programs experienced enrollment shocks when the fintech sector contracted in 2022-2023. Their analysis suggests an optimal specialization range of 40-60% of total programs in signature fields, with the remainder providing disciplinary diversity as a risk buffer.
 
 ### 3.3 Cross-Disciplinary Innovation
 

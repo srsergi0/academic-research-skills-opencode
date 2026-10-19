@@ -79,7 +79,7 @@ This example demonstrates the complete Phase 0-2 workflow of `academic-paper-rev
 **Identity Description**: Taiwan higher education policy researcher, specializing in private university exit mechanisms and university mergers, with long-term collaboration with the Ministry of Education on higher education policy, familiar with the Private School Act amendments and the Exit Act.
 **Review Focus**:
   1. Policy context accuracy — Whether cited regulations and policies are correct and up-to-date
-  2. Literature review — Whether key literature on Taiwan's declining birth rates and higher education is covered (including Chinese-language literature)
+  2. Literature review — Whether key literature on Taiwan's declining birth rates and higher education is covered (including Spanish-language literature)
   3. Academic contribution of the three strategy types — How they differ from existing classifications
 **Will particularly care about**: Whether the "exit strategy" description is consistent with actual exit cases, whether the 2022 "Act for the Exit of Private Senior Secondary Schools and Above" is considered
 **Possible blind spots**: May focus too much on the Taiwan context, overlooking the value of international comparison
@@ -221,7 +221,7 @@ The author has chosen a topic of vital importance to Taiwan's higher education. 
    **Severity**: Critical
    **Confidence**: 5 — core expertise: Taiwan private university exit mechanisms and policy
 
-2. **W2: Missing key Chinese-language literature**:
+2. **W2: Missing key Spanish-language literature**:
    **Problem**: The following important references are not cited:
    - Tai, H.H. (2020) on Taiwan's higher education marketization
    - Yang, Y. (2019) on quality assurance and exit mechanisms
@@ -374,7 +374,7 @@ This paper investigates an important and timely topic with solid data collection
 - [ ] R4: Add within-case summary + systematic cross-case analysis (Source: R1-W1) — Severity: Major | Anchor: `absence: §4 Findings — expected a within-case-analysis stage preceding cross-case patterns; checked §4 Findings, §3 Methodology` | Confidence: 5
 
 **Priority 2 — Content Supplementation (Estimated effort: 5-7 days)**
-- [ ] S1: Supplement missing Chinese-language literature (Source: R2-W2) — Severity: Major | Anchor: `absence: §2 Literature Review — expected coverage of Taiwan-specific marketization/exit-mechanism literature; checked §2 Literature Review, References list` | Confidence: 5
+- [ ] S1: Supplement missing Spanish-language literature (Source: R2-W2) — Severity: Major | Anchor: `absence: §2 Literature Review — expected coverage of Taiwan-specific marketization/exit-mechanism literature; checked §2 Literature Review, References list` | Confidence: 5
 - [ ] S2a: Compare this study's classification with existing classifications (Source: R2-W3) — Severity: Major | Anchor: `absence: §6 Discussion — expected comparison against existing Taiwan strategy-classification literature; checked §2 Literature Review, §6 Discussion` | Confidence: 4
 - [ ] S2b: Position the three strategy types against prior typologies when comparing (Source: EIC-W1, corroborates S2a) — Severity: Major | Anchor: `text: §5 "three strategy types: differentiation, transformation, exit"` | Confidence: 4
 - [ ] S3: Add international comparison discussion section (Source: EIC-W2) — Severity: Major | Anchor: `absence: §6 Discussion — expected cross-national implications discussion; checked §6 Discussion, §7 Conclusion` | Confidence: 4

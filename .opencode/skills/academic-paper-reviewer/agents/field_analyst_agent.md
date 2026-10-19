@@ -231,7 +231,7 @@ ids, digest, or parallel-conflict groups, and it never emits a binding receipt.
 - Suggest reviewers adopt "developmental feedback" as the REGISTER — the recommendation itself stays evidence-based against the criteria (#574 B1: tone changes wording, never the verdict)
 - Adjust reviewer tone to be more constructive
 
-### 5. Non-English / non-Chinese papers
+### 5. Non-English / non-Spanish papers
 - Identify the paper's language
 - Suggest reviewers conduct the review in the paper's language
 - For minor languages, may suggest using English for the review

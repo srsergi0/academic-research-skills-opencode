@@ -31,9 +31,9 @@ The user has a completed paper titled "The Impact of Micro-Credential Certificat
 
 **Minor Comments:**
 
-**m1.** The third sentence of the Chinese abstract — "This study found that micro-credential certification has a significant positive impact on student employability" — is too vague and does not mention the magnitude of the effect size.
+**m1.** The third sentence of the Spanish abstract — "This study found that micro-credential certification has a significant positive impact on student employability" — is too vague and does not mention the magnitude of the effect size.
 
-**m2.** Reference formatting is inconsistent: some Chinese references use full-width parentheses while others use half-width parentheses. Citation #15 is missing its DOI.
+**m2.** Reference formatting is inconsistent: some Spanish references mix "y" and "&" and several strip accents parentheses. Citation #15 is missing its DOI.
 
 **m3.** The axis labels in Figure 2 have font sizes that are too small; it is recommended to enlarge them to 10pt or above. Figure 3 is missing a caption.
 
@@ -93,17 +93,17 @@ The formatter_agent recommends the following revision order:
 
 ### Citation Audit Report
 
-**Audit Scope:** Full-text citation formatting (APA 7.0 Chinese citation standards)
+**Audit Scope:** Full-text citation formatting (APA 7.0 Spanish citation standards)
 
 **Issues Found:**
 
 | Issue | Count | Severity |
 |-------|-------|----------|
-| Inconsistent parenthesis format (full-width/half-width) | 7 instances | Medium |
+| Inconsistent connector format (y/&) and missing accents | 7 instances | Medium |
 | Missing DOI | 3 instances | High |
 | Inconsistent year format | 2 instances | Low |
 | In-text citation / reference list mismatch | 1 instance | High |
-| Missing English translated titles for Chinese references | 4 instances | Medium |
+| Missing English translated titles for Spanish references | 4 instances | Medium |
 
 ### Specific Corrections
 
@@ -123,7 +123,7 @@ Lin (2022)'s survey showed...
 According to the UNESCO (2024) report...
 ```
 
-Rule: Chinese papers uniformly use full-width parentheses; when the author is in the sentence, use "Author (Year)" format.
+Rule: Spanish papers use standard parentheses; narrative citations use "y" (Martínez y López, 2024), parenthetical use "&". Keep all accents.
 
 **Correction 2: Add missing DOIs (addressing m2)**
 
@@ -154,7 +154,7 @@ After correction:
 Chen and Wang（2023）found that micro-credential certification helps...
 ```
 
-**Correction 4: Add English translated titles for Chinese references**
+**Correction 4: Add English translated titles for Spanish references**
 
 Per APA 7.0 standards, non-English references should include an English translated title in the reference list.
 
@@ -246,7 +246,7 @@ All decision-bearing criteria now meet the target requirements. The remaining ps
 | Reviewer Comment | Before Revision | After Revision | Pages |
 |------------------|----------------|----------------|-------|
 | m1: Abstract effect size | "This study found that micro-credential certification has a significant positive impact on student employability" | "This study found that micro-credential certification has a moderate positive impact on student self-assessed employability (beta = .34, p < .001, f-squared = .18), with the most significant effect observed in the 'workplace practical skills' dimension" | p. ii |
-| m2: Citation formatting | Mixed full-width/half-width parentheses, 3 missing DOIs | Uniformly using full-width parentheses, all DOIs added, et al. misuse corrected | Throughout |
+| m2: Citation formatting | Mixed y/& connectors and stripped accents, 3 missing DOIs | Uniform "y"/"&" use with accents restored, all DOIs added, et al. misuse corrected | Throughout |
 | m3: Figures | Axis label font 8pt, Figure 3 missing caption | All figure fonts adjusted to 11pt, Figure 3 caption added: "Figure 3. Comparison of predictive power of different micro-credential types across five employability dimensions" | pp. 25, 27 |
 | m4: Typesetting omission | "as shown in Table X" | "as shown in Table 6" | p. 47 |
 | m5: Research gap | Introduction jumped directly from problem description to research purpose | Added a research gap paragraph in Section 1.3: "Although international literature has accumulated preliminary evidence on micro-credential certification, the vast majority of studies focus on Western higher education contexts. The uniqueness of Taiwan's vocational education system — including industry-academia cooperation mechanisms, certification-oriented curriculum design, and the dual-track training structure — limits the transferability of international research findings. Currently, local Taiwanese research consists mostly of policy advocacy or theoretical discourse, lacking empirical studies that validate the actual effects of micro-credential certification with quantitative data." | p. 5 |

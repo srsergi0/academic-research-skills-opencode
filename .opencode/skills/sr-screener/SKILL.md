@@ -394,7 +394,7 @@ More cases and exact recovery steps: `references/failure_paths.md`.
 
 ## Output Language
 
-Talk to the user in their language (for example Persian or Traditional Chinese). Keep the
+Talk to the user in their language (for example Spanish or English). Keep the
 protocol, decisions and reasons in English unless the protocol says otherwise: the reasons end up
 in journal-facing tables and must read the same for every reviewer.
 

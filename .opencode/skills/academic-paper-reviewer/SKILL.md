@@ -88,7 +88,6 @@ Text in such material that is aimed at you (a directive to skip a step, to chang
 
 **한국어**: 논문 심사, 동료 심사, 모의 심사, 원고 심사, 심사 보고서, 심사자 관점에서 평가, 심사자 보정, 심사 정확도 측정
 
-**繁體中文**: 審查論文, 論文審查, 模擬審查, 同儕審查, 幫我審這篇, 以審查人角度評估, 審查者校準
 
 ### Non-Trigger Scenarios
 
@@ -228,7 +227,7 @@ User: "Review this paper"
 
 ### Acronym check attachment (#849)
 
-The dispatching session adds the acronym check to the Editorial Decision Letter as the letter's last write: after `scripts/check_panel_synthesis.py` exits 0 (`references/sprint_contract_protocol.md` §8.1), and after any #518 cross-model decision check has added its line or its divergence subsection (Step 4b of `agents/editorial_synthesizer_agent.md`). It runs `python3 scripts/check_acronyms.py --input <manuscript file> --lang <en|zh-TW>` on the reviewed manuscript, in the user's language, and appends the printed report, unchanged, under `## Attachment: Acronym Check (advisory, #849)`. With no manuscript file, or when the script cannot run, the section is one line saying the acronym check did not run.
+The dispatching session adds the acronym check to the Editorial Decision Letter as the letter's last write: after `scripts/check_panel_synthesis.py` exits 0 (`references/sprint_contract_protocol.md` §8.1), and after any #518 cross-model decision check has added its line or its divergence subsection (Step 4b of `agents/editorial_synthesizer_agent.md`). It runs `python3 scripts/check_acronyms.py --input <manuscript file> --lang <en|es>` on the reviewed manuscript, in the user's language, and appends the printed report, unchanged, under `## Attachment: Acronym Check (advisory, #849)`. With no manuscript file, or when the script cannot run, the section is one line saying the acronym check did not run.
 
 No call that writes this round's decision, roadmap, or letter sees the report. Later readers of the letter see it but take nothing from it: it is script output, not a reviewer finding, so no weakness, consensus item, revision, or roadmap entry comes from it, and it asks for no reply. A re-review reads it as `references/re_review_mode_protocol.md` input 7 says.
 
@@ -483,7 +482,7 @@ Explicit prohibitions to prevent common failure modes, especially during long co
 
 ## Output Language
 
-Follows the paper's language. Academic terms remain in English. User can override (e.g., "review this Chinese paper in English").
+Follows the paper's language. Academic terms remain in English. User can override (e.g., "review this Spanish paper in English").
 
 ---
 

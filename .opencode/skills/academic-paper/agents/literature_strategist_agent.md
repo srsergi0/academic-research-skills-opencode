@@ -118,7 +118,7 @@ def admit(source):
 | Humanities | JSTOR, Project MUSE, MLA International Bibliography |
 | Business | ABI/INFORM, Business Source Complete |
 | General | Google Scholar, Web of Science, Scopus |
-| Taiwan HEI | Taiwan National Digital Library of Theses and Dissertations, Airiti Library, TSSCI |
+| Spain HEI | Teseo, TDX/TDR, Dialnet, SciELO, RedALyC, Latindex |
 
 ### Step 3: Search String Construction
 ```
@@ -132,7 +132,7 @@ def admit(source):
 |-----------|---------|---------|
 | Publication type | Peer-reviewed journals, books, conference proceedings | Blog posts, news articles (unless as primary data) |
 | Date range | Profile-, question-, and target-appropriate window + relevant foundational works | Outside the justified window unless historically or conceptually relevant |
-| Language | Per config (EN, zh-TW, or both) | Other languages unless key source |
+| Language | Per config (EN, es, or both) | Other languages unless key source |
 | Relevance | Directly addresses RQ | Tangentially related |
 
 Under a non-neutral domain evidence profile, the profile's standard evidence types are added to the includable set before screening — the peer-reviewed filter (Step 3 `Filters:` line and the Step 4 Publication type / Date range rows) relaxes to peer-reviewed-equivalent for `cs_ml`; the year-range relaxes for `humanities_interpretive` canonical texts. Never tightened, never dropping anything the neutral filter would have kept (these are upstream hard filters that would otherwise starve the admit paths the screening tree opens downstream). Search-string enrichment under a profile is optional/additive and does NOT change the Step 2 `Discipline`-driven database table.
@@ -443,7 +443,7 @@ Layer 1: Boolean Search (keyword search)
   INPUT:  Paper Configuration Record (RQ, discipline, key concepts)
   PROCESS:
     1. Extract 2-4 core concepts from RQ
-    2. List synonyms + English/Chinese equivalents for each concept
+    2. List synonyms + English/Spanish equivalents for each concept
     3. Construct Boolean search string (AND/OR/NOT)
     4. Select 2-3 primary databases by discipline
     5. Execute search, record hit count per database
@@ -550,16 +550,16 @@ needs qualification, or should be replaced. No numeric total, venue prestige
 band, citation threshold, or universal evidence hierarchy may substitute for
 that decision.
 
-### Chinese-English Literature Search Difference Handling
+### Spanish-English Literature Search Difference Handling
 
-| Aspect | English Literature | Chinese Literature (Traditional/Simplified) |
-|------|---------|-----------------|
-| Databases | Scopus, WoS, PubMed, ERIC | Airiti, Taiwan Theses DB, CNKI, TSSCI |
-| Search syntax | Standard Boolean syntax | Need bilingual keywords (search same concept in both Chinese and English) |
-| Quality indicators | Impact Factor, h-index | TSSCI inclusion, NSTC project relevance |
-| Citation format | Per selected format (APA/Chicago/...) | Chinese APA format (see `apa7_chinese_citation_guide.md`) |
-| Search order | Search English first -> use findings to supplement Chinese search terms | Search Chinese first -> confirm whether English equivalent literature exists |
-| Special notes | Note preprints need to be flagged | Note master's/doctoral thesis quality varies; requires additional assessment |
+| Aspect | English Literature | Spanish Literature |
+|--------|-------------------|--------------------|
+| Databases | Scopus, WoS, PubMed, ERIC | SciELO, Dialnet, RedALyC, Latindex, Teseo/TDX (theses) |
+| Search syntax | Standard Boolean syntax | Bilingual keywords (search same concept in both Spanish and English) |
+| Quality indicators | Impact Factor, h-index | Journal indexing (SciELO, Scopus/WoS coverage), AEI project relevance |
+| Citation format | Per selected format (APA/Chicago/...) | Spanish APA format (see `apa7_spanish_citation_guide.md`) |
+| Search order | Search English first -> use findings to supplement Spanish search terms | Search Spanish first -> confirm whether English equivalent literature exists |
+| Special notes | Note preprints need to be flagged | Note TFG/TFM and thesis quality varies; requires additional assessment |
 
 **Language-coverage rules**:
 - Apply a numerical language mix only when the research question, review protocol, target criteria, or user-approved plan supplies one.

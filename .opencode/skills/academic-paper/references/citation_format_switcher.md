@@ -160,69 +160,41 @@ Smith, John A., and Betty C. Jones. "Article Title in Title Case."
 4. Abbreviate journal titles (NLM catalog)
 5. Use semicolons/colons for volume/page separators
 
-## Chinese Citation Format Switching
+## Spanish Citation Format Switching
 
-### APA 7.0 Chinese Format
+### APA 7.0 Spanish Format
 
-For complete specifications, see `apa7_chinese_citation_guide.md`. Below is a quick reference.
+For complete specifications, see `apa7_spanish_citation_guide.md`. Below is a quick reference.
 
-**Chinese journal article**:
+**Spanish journal article**:
 ```
-Wang, Da-Ming, & Li, Xiao-Hua (2024). Article title. Journal Name, Volume(Issue), Pages. https://doi.org/xxxxx
-```
-
-**Chinese book**:
-```
-Zhang, San (2023). Book title. Publisher.
+García Márquez, G. (2024). El impacto de la natalidad en las universidades privadas. Revista de Educación Superior, 15(2), 45-68. https://doi.org/10.1234/res.2024.0502.03
 ```
 
-**Government publication**:
+**Spanish book**:
 ```
-Ministry of Education (2024). Publication title. https://url
+López Fernández, A. (2023). *Calidad universitaria en contextos de cambio demográfico*. Editorial Académica.
 ```
 
-### Mixed Chinese-English Reference Handling
+### Mixed Spanish-English Reference Handling
 
-**In-text citations**:
-- Chinese uses full-width parentheses: (Author, Year)
-- English uses half-width parentheses: (Author, Year)
-- Chinese multiple authors use enumeration comma; English uses &
+- Spanish uses standard parentheses: (Autor, Año).
+- Parenthetical lists use `&`; narrative citations use `y`.
+- Compound surnames keep both parts and particles in every citation.
+- | **Option A (Recommended)** | Single alphabetical list (letter by letter, ñ after n) | APA 7th default and most venues |
+- | **Option B** | Separate language sections | Only if the venue explicitly requires it |
 
-**Reference list ordering**:
+**Same author with both Spanish and English works**: List together, ordered alphabetically then by year (add a/b for same-year works).
 
-| Option | Description | Applicable Scenario |
-|------|------|---------|
-| **Option A (Recommended)** | Chinese first (ordered by stroke count), English after (ordered alphabetically) | Convention for most Taiwan journals |
-| **Option B** | Mixed Chinese-English ordering (unified stroke count / alphabetical) | Some international journals |
+### Format Conversion Notes (Spanish Papers)
 
-**Same author with both Chinese and English works**: List separately — Chinese works go in the Chinese section, English works go in the English section.
+**Spanish APA → Chicago (author-date)**:
+- Keep author order, accents and ñ; expand initials to full first names only if the venue requires notes-bibliography style.
 
-### Format Conversion Notes (Chinese Papers)
+**Spanish APA → IEEE**:
+- Numbered brackets in citation order; reference list keeps accents and ñ; the `y`/`&` distinction disappears.
 
-**Chinese APA → Chicago**:
-1. Publication format differs (APA 7 does not require publication location, Chicago does)
-2. Change titles to "title case" format
-3. Add footnote citation system
-
-**Chinese APA → IEEE**:
-1. Add numbered labels [N]
-2. Remove year from after author position
-3. Order by citation appearance (not stroke count)
-
-**Chinese paper format conventions**:
-- Most Taiwan journals use APA
-- Humanities disciplines (history, literature) occasionally use Chicago
-- Engineering/CS fields mostly use IEEE
-- Medical fields use Vancouver
-
----
-
-## AI-Generated Content Citation (by Format)
-
-| Format | How to Cite AI |
-|--------|---------------|
-| APA 7th | OpenAI. (2024). ChatGPT (Version 4) [Large language model]. https://chat.openai.com |
-| Chicago | OpenAI. ChatGPT. Version 4. 2024. Large language model. https://chat.openai.com. |
-| MLA | "ChatGPT response to [prompt description]." OpenAI, 15 Mar. 2024, chat.openai.com. |
-| IEEE | [N] OpenAI, "ChatGPT," ver. 4, 2024. [Online]. Available: https://chat.openai.com |
-| Vancouver | OpenAI. ChatGPT [Large language model]. 2024. Available from: https://chat.openai.com |
+**Spanish paper format conventions**:
+- Accents and ñ mandatory everywhere; never strip diacritics.
+- Decimal comma in Spanish prose (3,14); DOIs and URLs verbatim.
+- Angular quotation marks «» preferred (RAE); be consistent.

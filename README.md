@@ -17,6 +17,12 @@ Skills live in `.opencode/skills/` (also readable by OpenCode from `.claude/skil
 
 Upstream commit pinned in `.upstream-version`. `MODE_REGISTRY.md` and `.opencode/shared/` vendored from upstream.
 
+## Idioma: español + inglés (por defecto `es-en`)
+Resúmenes bilingües ES+EN, guía APA en español, cribado y ejemplos en español. Detalle y excepciones: `docs/SPANISH_SUPPORT.md`.
+
+## Idioma: español + inglés (por defecto `es-en`)
+Resúmenes bilingües ES+EN, guía APA en español, cribado y ejemplos en español. Detalle y excepciones: `docs/SPANISH_SUPPORT.md`.
+
 ## Install (project-local, no global install)
 ```sh
 git clone https://github.com/<you>/academic-research-skills-opencode.git

@@ -105,10 +105,10 @@ The anchor source must occur in its profile or overlay `source_ids`; its
 `provision` must occur in that source's `allowed_provisions`; and its
 `effective_date` must equal the source's provision-specific `effective_from`.
 
-Never infer an effective date from an amendment date. For Taiwan, the page's
+Never infer an effective date from an amendment date. For Spain, the BOE page’s
 amendment date belongs in `source_amended_or_published_date`; it is not, without a
 separate controlling-authority basis, the profile's `effective_from` or a
-requirement's `effective_date`. Keep the controlling Chinese source distinct from
+requirement's `effective_date`. Keep the controlling Spanish source distinct from
 the official English reference translation.
 
 Future-effective, expired, stale, unverified, superseded, or

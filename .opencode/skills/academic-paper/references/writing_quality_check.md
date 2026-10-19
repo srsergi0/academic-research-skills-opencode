@@ -153,13 +153,13 @@ Abstracts must respect venue length and structure requirements. Methods may bene
 `scripts/check_acronyms.py` checks the acronyms in a Markdown or plain-text manuscript. It calls no model and never changes the file. Its rules follow common journal copyediting practice, and author and venue requirements come first (*Priority and scope* above).
 
 1. **Define at first use.** Give the full form, then the acronym in parentheses: randomized controlled trial (RCT). Later uses take the acronym alone.
-2. **Each scope defines its own.** The body, the English abstract, and the Chinese abstract are separate scopes. The Chinese form `全稱（English full form, ABBR）` counts as a definition.
+2. **Each scope defines its own.** The body, the English abstract, and the Spanish abstract are separate scopes. The Spanish form `término completo (English full form, ABBR)` counts as a definition.
 3. **Define once per scope.** A second definition in the same scope is reported.
 4. **Allowlist.** Acronyms on the script's default list (DNA, PhD, DOI, and similar) or on the author's list (`--allow`, `--allow-file`) need no definition. The allowlist exempts rules 1 and 3 only.
 
 ### When the Caller Runs It
 
-The caller, meaning the session that dispatches the writing or review agents, runs the script; those agents cannot run scripts. The writer saves its draft as `draft.md` in its `phase4_*/` folder, and `abstract_bilingual_agent` saves its abstracts as `abstract.md` in its `phase5_*/` folder, so the check reads a file an agent already wrote. Set `--lang` to the user's language (`en` or `zh-TW`) and show the report as printed.
+The caller, meaning the session that dispatches the writing or review agents, runs the script; those agents cannot run scripts. The writer saves its draft as `draft.md` in its `phase4_*/` folder, and `abstract_bilingual_agent` saves its abstracts as `abstract.md` in its `phase5_*/` folder, so the check reads a file an agent already wrote. Set `--lang` to the user's language (`en` or `es`) and show the report as printed.
 
 | Point | Input | `--scopes` | Report goes to |
 |---|---|---|---|

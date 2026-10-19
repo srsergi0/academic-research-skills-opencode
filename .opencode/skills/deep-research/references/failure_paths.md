@@ -17,7 +17,7 @@ This document lists all failure scenarios that may be encountered across all mod
 | F5 | Ethics BLOCKED | full, review | Critical | STOP + remediation path |
 | F6 | Socratic dialogue does not converge | socratic | Medium | Switch to full mode |
 | F7 | User abandons mid-process | all | Low | Save progress |
-| F8 | Only Chinese-language literature available | full, lit-review | Medium | Switch search strategy |
+| F8 | Only Spanish-language literature available | full, lit-review | Medium | Switch search strategy |
 | F9 | All source quality below threshold | full, fact-check | High | Downgrade or expand sources |
 | F10 | Conclusions inconsistent with evidence | full | High | Return to Phase 3 |
 | F11 | Revision loop exceeds limit | full | Medium | Force-complete + limitation list |
@@ -240,7 +240,7 @@ This document lists all failure scenarios that may be encountered across all mod
 
 ---
 
-### F8: Only Chinese-Language Literature Available
+### F8: Only Spanish-Language Literature Available
 
 **Affected Modes**: `full` (Phase 2), `lit-review`
 **Severity**: Medium
@@ -250,17 +250,17 @@ This document lists all failure scenarios that may be encountered across all mod
 - The topic is strongly localized (e.g., Taiwan-specific policy, regulations, institutional systems)
 
 **User Notification Message**:
-> English-language literature on this topic is very limited, but Chinese-language literature resources are abundant. I will adjust the search strategy to include Chinese academic databases. Please note that citation conventions for Chinese-language literature in international publications may differ.
+> English-language literature on this topic is very limited, but Spanish-language literature resources are abundant. I will adjust the search strategy to include Spanish academic databases. Please note that citation conventions for Spanish-language literature in international publications may differ.
 
 **Handling Steps**:
-1. Switch search strategy to Chinese academic databases (Airiti Library, National Digital Library of Theses and Dissertations in Taiwan, CNKI)
-2. Re-search using Chinese keywords
+1. Switch search strategy to Spanish academic databases (SciELO, Dialnet, RedALyC, Latindex, Teseo/TDX)
+2. Re-search using Spanish keywords
 3. Note the language distribution of the literature in the report
-4. If the user needs an English report → provide suggestions for English citation format of Chinese literature
+4. If the user needs an English report → provide suggestions for English citation format of Spanish literature
 5. If the user needs to publish internationally → suggest finding comparable international cases
 
 **Recovery Paths**:
-- Chinese literature is sufficient → continue workflow with clear language annotations
+- Spanish literature is sufficient → continue workflow with clear language annotations
 - User needs international publication → suggest adjusting RQ to add a comparative perspective
 
 ---

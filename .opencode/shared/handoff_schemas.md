@@ -134,11 +134,11 @@ Consuming agents should validate input and request re-generation if schema viola
 **Search Strategy**:
 - Databases: Scopus, Web of Science, ERIC, Airiti Library
 - Keywords: "AI assessment" AND "higher education" AND "Taiwan"; "formative assessment" AND "artificial intelligence"
-- Inclusion: Peer-reviewed, English or Chinese, empirical or review, 2018-2025
+- Inclusion: Peer-reviewed, English or Spanish, empirical or review, 2018-2025
 - Exclusion: K-12, non-STEM, editorials
 - Date Range: 2018-2025
 
-**Coverage Assessment**: Strong coverage of English-language literature. Moderate coverage of Chinese-language sources (Airiti). Gap: limited grey literature from Taiwan MOE reports.
+**Coverage Assessment**: Strong coverage of English-language literature. Moderate coverage of Spanish-language sources (SciELO, Dialnet). Gap: limited grey literature from ministry reports.
 
 **Coverage requirement**: Each material claim and planned conceptual/methodological role has fit-for-purpose support, or the bounded gap is disclosed. No universal source-count or peer-reviewed-ratio threshold applies.
 
@@ -221,9 +221,9 @@ AI-assisted assessment's primary advantage lies in the immediacy of feedback, re
 | Field | Type | Description |
 |-------|------|-------------|
 | `title` | string | Paper title |
-| `abstract` | object | `{english: string, chinese: string}` (chinese is required only if bilingual) |
+| `abstract` | object | `{english: string, spanish: string}` (spanish is required only if bilingual) |
 | `authors` | list[Author] | Author information with CRediT roles |
-| `keywords` | object | `{en: list[string], zh_tw: list[string]}` bilingual keywords; per-language counts follow the regime table in [`academic-paper/references/abstract_writing_guide.md`](../academic-paper/references/abstract_writing_guide.md) (#862 Phase 1 — this row references the guide's regime table instead of restating a count) |
+| `keywords` | object | `{en: list[string], es: list[string]}` bilingual keywords; per-language counts follow the regime table in [`academic-paper/references/abstract_writing_guide.md`](../academic-paper/references/abstract_writing_guide.md) (#862 Phase 1 — this row references the guide's regime table instead of restating a count) |
 | `sections` | list[Section] | Ordered paper sections |
 | `references` | list[Reference] | Full reference list with cross-referencing |
 | `total_word_count` | integer | Total word count (excluding references) |
@@ -234,7 +234,7 @@ AI-assisted assessment's primary advantage lies in the immediacy of feedback, re
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `output_language_pair` | string | *(optional, #862 Phase 1)* Opaque registry token declaring the run's two abstract languages. Initially only `zh-tw-en` — L1 Traditional Chinese, L2 English. Registry and language roles: [`shared/output_language_pair.md`](output_language_pair.md). Abstract length and keyword counts: the regime table in [`academic-paper/references/abstract_writing_guide.md`](../academic-paper/references/abstract_writing_guide.md). **Omission = the legacy state** = the legacy object keys and the heading literals reproduce exactly and the serialized key is omitted, so a pre-#862 handoff keeps the same keys, headings, and serialized shape. A present value outside the registry, or a non-string / `null` value, fails visibly naming that registry — never a silent fallback to the default. The legacy Schema-4 object keys are untouched: `abstract: {english, chinese}`, `keywords: {en, zh_tw}`. |
+| `output_language_pair` | string | *(optional, #862 Phase 1)* Opaque registry token declaring the run's two abstract languages. Initially only `es-en` — L1 Spanish, L2 English. Registry and language roles: [`shared/output_language_pair.md`](output_language_pair.md). Abstract length and keyword counts: the regime table in [`academic-paper/references/abstract_writing_guide.md`](../academic-paper/references/abstract_writing_guide.md). **Omission = the legacy state** = the legacy object keys and the heading literals reproduce exactly and the serialized key is omitted, so a pre-#862 handoff keeps the same keys, headings, and serialized shape. A present value outside the registry, or a non-string / `null` value, fails visibly naming that registry — never a silent fallback to the default. The legacy Schema-4 object keys are untouched: `abstract: {english, spanish}`, `keywords: {en, es}`. |
 
 ### Section Object
 

@@ -446,12 +446,12 @@ The sequence returns a primary reporting guideline and separately labelled compa
 
 The following are typical of clinical manuscript descriptions and are compatible with more than one design. Treat each as a prompt for a specific follow-up question, never as a routing decision.
 
-- *"randomly divided into two groups"* (隨機分為兩組) — may describe genuine randomisation or alternation, admission-order or clinician-preference allocation. Ask how the allocation sequence was generated and whether it was concealed before accepting CONSORT.
-- *"retrospective analysis of cases treated in our department"* (回顧性分析我科病例) — compatible with a retrospective cohort, an uncontrolled case series and a cross-sectional study. Ask whether there is a comparison group and whether participants were followed over time.
-- *"observation of clinical efficacy"*, *"comparison of group A and group B"* (臨床療效觀察) — usually a non-randomised intervention study rather than a trial. Ask who decided which patients received which treatment.
+- "*randomly divided into two groups"* (asignados al azar a dos grupos) — may describe genuine randomisation or alternation, admission-order or clinician-preference allocation. Ask how the allocation sequence was generated and whether it was concealed before accepting CONSORT.
+- "*retrospective analysis of cases treated in our department"* (análisis retrospectivo de los casos atendidos en nuestro servicio) — compatible with a retrospective cohort, an uncontrolled case series and a cross-sectional study. Ask whether there is a comparison group and whether participants were followed over time.
+- "*observation of clinical efficacy"*, *"comparison of group A and group B"* (observación de la eficacia clínica) — usually a non-randomised intervention study rather than a trial. Ask who decided which patients received which treatment.
 - *"diagnostic value of X for Y"*, *"area under the ROC curve"* — does not distinguish a prediction-model study from an index-test accuracy study. Ask whether the deliverable is a multivariable model and whether an index test is compared with a reference standard; Q3 must be resolved before Q5.
-- *"a prediction model was established"*, *"nomogram"* (預測模型、列線圖) — TRIPOD+AI, even when the analysis is ordinary logistic regression.
-- *"analysis of risk factors"* (危險因素分析) — cohort or case-control; the sampling direction in Q6a decides, not the phrase.
+- "*a prediction model was established"*, *"nomogram"* (modelo de predicción, nomograma) — TRIPOD+AI, even when the analysis is ordinary logistic regression.
+- "*analysis of risk factors"* (análisis de los factores de riesgo) — cohort or case-control; the sampling direction in Q6a decides, not the phrase.
 
 ---
 

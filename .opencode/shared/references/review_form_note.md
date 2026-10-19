@@ -17,7 +17,7 @@ Sources for the one-line descriptions:
 - Integrative review: Whittemore, R., & Knafl, K. (2005). The integrative review: Updated methodology. *Journal of Advanced Nursing, 52*(5), 546–553. https://doi.org/10.1111/j.1365-2648.2005.03621.x (the only review approach that "allows for the combination of diverse methodologies"; its stages include searching the literature and evaluating data from primary sources).
 - The scoping and narrative lines give no time figure because none of these sources supports one; they say what the work depends on instead.
 
-Other languages: the note has an English and a Traditional Chinese text. Every other language gets the English text, so that no user sees a paraphrase the model wrote on the spot. A community locale pack may propose a reviewed translation as a third fixed text.
+Other languages: the note has an English and a Spanish text. Every other language gets the English text, so that no user sees a paraphrase the model wrote on the spot. A community locale pack may propose a reviewed translation as a third fixed text.
 
 Out of scope: any model assessment of whether a question suits a systematic review; the screening skill proposed in #919. Whether sessions show the note at the right points is prompt-level and unmeasured; the routing fixtures in `tests/fixtures/issue_133_routing/` (13–15) are smoke tests, not a rate.
 
@@ -40,7 +40,7 @@ Whether the note appears must not depend on the topic, the wording, or the kind 
 
 **How to show it.**
 
-- Show the note text below verbatim: the English text in English conversations, the Traditional Chinese text in Traditional Chinese conversations, and the English text in every other language. Do not shorten, reorder, paraphrase, or add to it. Add no recommendation, default, or comment on which form fits the question, before or after it.
+- Show the note text below verbatim: the English text in English conversations, the Spanish text in Spanish conversations, and the English text in every other language. Do not shorten, reorder, paraphrase, or add to it. Add no recommendation, default, or comment on which form fits the question, before or after it.
 - Then stop and wait for the author's reply. Do not start the literature search, the review, or Phase 2 before the author replies.
 - The note does not reopen the choice of workflow. If the author skips it, the mode the author asked for continues unchanged.
 - If the author asks which form fits their question, say that the choice is theirs. On request, describe any form in more detail, without a comparison that favours one form for their question.
@@ -67,16 +67,16 @@ Whether the note appears must not depend on the topic, the wording, or the kind 
 >
 > Reply with the form you want, or reply "skip" to continue as you are. Either reply is your decision, and this note will not appear again in this project.
 
-**Note text (Traditional Chinese):**
+**Note text (Spanish):**
 
-> **開始回顧之前：要做哪一種文獻回顧？**
-> 這件事由你決定，ARS 不替你選。下列選項沒有預設、沒有推薦，排列順序也不代表高下。
+> **Antes de empezar la revisión: ¿qué forma de revisión bibliográfica?**
+> Esto lo decides tú, ARS no lo elige por ti. No hay opción por defecto ni recomendación, y el orden siguiente no es un ranking.
 >
-> - **系統性回顧（systematic review）**：回答一個聚焦的問題，檢索與篩選方式事先訂好，盡可能由兩人各自獨立篩選。一個數人團隊需要數個月到一年以上，通常有已登錄的研究計畫書。ARS 對應：`systematic-review` 模式。
-> - **範疇回顧（scoping review）**：用系統化的做法盤點一個主題已經研究了什麼、有哪些主要概念、缺口在哪裡。工作量隨主題的廣度增加。ARS 沒有專屬模式。
-> - **敘事或整合性回顧（narrative / integrative review）**：從文獻建立論證或架構。敘事回顧由作者選擇文獻；整合性回顧會記錄檢索與評估過程，並可合併不同研究設計。工作量取決於作者設定的範圍。ARS 對應：`lit-review` 模式。
-> - **快速回顧（rapid review）**：為了早點交出結果而縮短或省略部分步驟的系統性回顧，通常在數週到數個月內完成。ARS 沒有專屬模式。
-> - **不做正式回顧**：用手邊的文獻寫背景，例如論文的緒論。不宣稱涵蓋整體文獻。
+> - **Revisión sistemática**: responde una pregunta focalizada con un plan de búsqueda y cribado fijado de antemano, con dos personas cribando de forma independiente cuando sea posible. De meses a más de un año para un equipo de varias personas, a menudo con protocolo registrado. En ARS: modo `systematic-review`.
+> - **Revisión de alcance (scoping review)**: mapea qué se ha estudiado sobre un tema, los conceptos principales y las brechas, con un enfoque sistemático. El trabajo crece con la amplitud del tema. ARS no tiene un modo separado para esta forma.
+> - **Revisión narrativa o integradora**: construye un argumento o un marco desde la literatura. En la revisión narrativa la autoría elige las fuentes; la integradora documenta su búsqueda y evaluación y puede combinar distintos diseños de estudio. El trabajo depende del alcance que defina la autoría. En ARS: continúa en el modo actual.
+> - **Revisión rápida (rapid review)**: una revisión sistemática con algunos pasos acortados u omitidos para entregar antes, normalmente en semanas o pocos meses. ARS no tiene un modo separado para esta forma.
+> - **Sin revisión formal**: contexto con las fuentes disponibles, por ejemplo para una introducción. No pretende cubrir toda la literatura.
 >
-> 請回覆你要的形式，或回覆「跳過」照目前的做法繼續。兩種回覆都算你的決定，這個專案裡不會再出現這則提醒。
+> Responde con la forma que quieres, o responde "omitir" para continuar como estás. Cualquiera de las dos respuestas es tu decisión, y esta nota no volverá a aparecer en este proyecto.
 <!-- review-form-note:end -->

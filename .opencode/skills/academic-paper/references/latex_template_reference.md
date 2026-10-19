@@ -21,11 +21,10 @@ Used by `formatter_agent` for LaTeX output generation.
 \usepackage{url}                      % URL formatting
 \usepackage{float}                    % Figure placement
 
-% === CJK Support (for zh-TW content) ===
-% Uncomment for Chinese content:
-% \usepackage{xeCJK}
-% \setCJKmainfont{Noto Sans CJK TC}
-% \setCJKsansfont{Noto Sans CJK TC}
+% === Spanish Support (babel, no Latin stack needed) ===
+% Uncomment for Spanish content:
+% \usepackage[spanish]{babel}
+% \usepackage[T1]{fontenc}
 
 % === Settings ===
 \doublespacing                        % APA requires double spacing
@@ -116,8 +115,7 @@ When APA 7.0 format is requested, use the `apa7` document class instead of `arti
 % === Fonts (XeTeX) ===
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
-\usepackage{xeCJK}
-\setCJKmainfont{Source Han Serif TC VF}
+\usepackage[spanish]{babel}
 \setmonofont{Courier New}
 
 % === Additional packages ===
@@ -306,18 +304,17 @@ Where N = `(number_of_columns - 1) × 2`
 | `\parencite{Smith2024}` | (Smith, 2024) |
 | `\autocite{Smith2024}` | (Smith, 2024) — adapts to style |
 
-## XeLaTeX for Chinese Content
+## pdfLaTeX / tectonic for Spanish Content
 
-When the paper includes zh-TW content:
+When the paper includes Spanish content, no Latin stack is needed:
 
 ```latex
 \documentclass[12pt, a4paper]{article}
-\usepackage{xeCJK}
-\setCJKmainfont{Noto Sans CJK TC}     % or 'AR PL UMing TW'
-\setCJKsansfont{Noto Sans CJK TC}
-\setCJKmonofont{Noto Sans Mono CJK TC}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
-% Compile with: xelatex paper.tex
+% Compile with: tectonic paper.tex  (or: npx tachyon-tex paper.tex)
 ```
 
 ### Bilingual Abstract in LaTeX
@@ -330,21 +327,21 @@ English abstract text here...
 \end{abstract}
 
 \begin{center}
-\textbf{Chinese Abstract}
+\textbf{Resumen}
 \end{center}
 
 \noindent
-Chinese abstract content...
+Contenido del resumen en español...
 
 \noindent
-\textbf{Keywords}: Keyword 1, Keyword 2, Keyword 3
+**Palabras clave**: palabra1, palabra2, palabra3
 ```
 
 ## Common LaTeX Compilation Issues
 
 | Issue | Solution |
 |-------|---------|
-| Chinese characters not showing | Use XeLaTeX instead of pdfLaTeX |
+| Spanish characters not showing | Use XeLaTeX instead of pdfLaTeX |
 | Bibliography not appearing | Run: latex → bibtex → latex → latex |
 | Citations showing [?] | Run bibtex and recompile |
 | Hyperlinks not working | Ensure `hyperref` is loaded last |
@@ -365,10 +362,10 @@ pandoc paper.md -o paper.pdf --pdf-engine=xelatex \
   -V geometry:margin=1in -V fontsize=12pt -V linestretch=2
 ```
 
-### Markdown → PDF (with Chinese)
+### Markdown → PDF (with Spanish)
 ```bash
 pandoc paper.md -o paper.pdf --pdf-engine=xelatex \
-  -V CJKmainfont="Noto Sans CJK TC" \
+  -V mainfont="TeX Gyre Termes" \
   --bibliography=references.bib --csl=apa.csl
 ```
 

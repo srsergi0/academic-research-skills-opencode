@@ -124,7 +124,7 @@ CRediT (Contributor Roles Taxonomy) is a standardized taxonomy of author contrib
 
 **Higher Education Research Context Examples**:
 - Writing the complete initial draft of the paper (including all chapters)
-- Translating the Chinese initial draft into an English submission version
+- Translating the Spanish initial draft into an English submission version
 - Writing specific chapters (e.g., literature review or methodology)
 
 ### 14. Writing -- Review & Editing
@@ -267,7 +267,7 @@ Writing – original draft, Writing – review & editing.
 [Author C]: Investigation, Validation, Writing – review & editing.
 ```
 
-### Chinese Version
+### Spanish Version
 
 **Author Contributions Statement**:
 
@@ -279,24 +279,24 @@ Writing – original draft, Writing – review & editing.
 [Author C]: Investigation, Validation, Writing – review & editing.
 ```
 
-### Chinese-English Role Mapping
+### Spanish-English Role Mapping
 
-| English | Romanized Chinese |
+| English | Español |
 |------|------|
-| Conceptualization | Gai Nian Hua |
-| Data curation | Zi Liao Guan Li |
-| Formal analysis | Zheng Shi Fen Xi |
-| Funding acquisition | Jing Fei Qu De |
-| Investigation | Diao Cha Yan Jiu |
-| Methodology | Yan Jiu Fang Fa |
-| Project administration | Ji Hua Guan Li |
-| Resources | Zi Yuan Ti Gong |
-| Software | Ruan Ti Kai Fa |
-| Supervision | Zhi Dao Jian Du |
-| Validation | Yan Zheng |
-| Visualization | Shi Jue Hua |
-| Writing -- original draft | Zhuan Xie Chu Gao |
-| Writing -- review & editing | Shen Yue Xiu Ding |
+| Conceptualization | Conceptualización |
+| Data curation | Curación de datos |
+| Formal analysis | Análisis formal |
+| Funding acquisition | Adquisición de fondos |
+| Investigation | Investigación |
+| Methodology | Metodología |
+| Project administration | Administración del proyecto |
+| Resources | Recursos |
+| Software | Software |
+| Supervision | Supervisión |
+| Validation | Validación |
+| Visualization | Visualización |
+| Writing – original draft | Redacción – borrador original |
+| Writing – review & editing | Redacción – revisión y edición |
 
 ---
 

@@ -163,16 +163,16 @@ although, despite, while, granted that, notwithstanding
 | Discussion (interpreting) | Present | "These findings suggest..." |
 | Conclusion (implications) | Present/Future | "This has implications for... / Future research should..." |
 
-## Chinese Academic Writing (zh-TW) Conventions
+## Spanish Academic Writing (es) Conventions
 
 ### Register
 - Use written/formal language; avoid colloquial expressions
-- Prefer active voice (Chinese rarely uses passive)
+- Prefer active voice (Spanish rarely uses passive)
 - Mainly short sentences; avoid overly long subordinate clauses
 - Use "this study" (ben yan jiu) rather than "we" (wo men)
 
 ### Common Academic Expressions
-| English | Romanized Chinese |
+| English | Romanized Spanish |
 |------|------|
 | This study aims to | Ben Yan Jiu Zhi Zai |
 | The findings indicate | Yan Jiu Jie Guo Xian Shi |

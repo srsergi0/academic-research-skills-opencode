@@ -218,17 +218,17 @@ and primary-source anchor. Do not restate them as universal requirements.
 | Axis | Exact #666 requirement ids currently available |
 |---|---|
 | Review ethics — U.S. bounded profile | `us.45cfr46.107.irb-composition`; `us.45cfr46.116.informed-consent` |
-| Review ethics — Taiwan bounded profile | `tw.hsra.article-7.committee-composition`; `tw.hsra.article-14.consent-information` |
+| Review ethics — Spain bounded profile | `es.libi.cei-composition`; `es.libi.consent-information` |
 | Data protection — GDPR bounded profile | `eu.gdpr.article-6.lawful-basis`; `eu.gdpr.article-9.special-category-research`; `eu.gdpr.article-13.direct-collection-information`; `eu.gdpr.article-14.indirect-collection-information`; `eu.gdpr.article-89.1.research-safeguards`; `eu.gdpr.article-89.2.member-state-derogation` |
 
 - [ ] Each pointer belongs to an exactly selected profile whose resolved result permits profile-dependent use
 - [ ] Committee-composition rows remain with their institutional/committee actors and are not converted into investigator packet requirements
-- [ ] U.S. and Taiwan rows retain their own authority vocabulary and are not translated into one another's pathway terms
+- [ ] U.S. and Spanish rows retain their own authority vocabulary and are not translated into one another's pathway terms
 - [ ] Requirements outside these bounded rows are labelled `unprofiled` and referred to the responsible authority
 
 ### 8.3 Participant-Information and Consent Preparation
 
-- [ ] If applicable after exact resolution, the trace uses `us.45cfr46.116.informed-consent` or `tw.hsra.article-14.consent-information` rather than a merged universal element list
+- [ ] If applicable after exact resolution, the trace uses `us.45cfr46.116.informed-consent` or `es.libi.consent-information` rather than a merged universal element list
 - [ ] If the selected GDPR facts resolve direct collection, participant information points to `eu.gdpr.article-13.direct-collection-information`; if they resolve collection elsewhere, it points to `eu.gdpr.article-14.indirect-collection-information`
 - [ ] Waiver, exception, signature, assent, representative, recording, community-governance, sector, and institution-specific questions absent from the registry are visibly `unprofiled`
 - [ ] Online-survey language accurately says whether the platform, institution, or research team collects or can access IP addresses, cookies, device identifiers, timestamps, contact fields, or other metadata
@@ -261,7 +261,7 @@ de-identification, or compliance status:
 - [ ] Proposed safeguards and unresolved questions are presented to the responsible institution without a verdict
 - [ ] Current institutional timeline, training, submission, reporting, and authorization requirements are requested; absent a dated response, they remain `unknown/unprofiled`
 
-> For the portable fact flow, exact requirement anchors, survey metadata disclosure rule, and illustrative Taiwan/institution planning questions, see `references/irb_decision_tree.md`. Do not treat that reference as authorization.
+> For the portable fact flow, exact requirement anchors, survey metadata disclosure rule, and illustrative Spain/institution planning questions, see `references/irb_decision_tree.md`. Do not treat that reference as authorization.
 
 ---
 

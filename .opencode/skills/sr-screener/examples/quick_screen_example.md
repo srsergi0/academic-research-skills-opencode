@@ -19,7 +19,7 @@ AB: We review NGAL, KIM-1, IL-18 and L-FABP in paediatric AKI, including after c
 TI: Plasma NGAL after pediatric cardiac surgery and postoperative acute kidney injury
 AB: In 120 children, plasma NGAL at 2 h after surgery identified AKI (AUC 0.79).
 
-### R00004 | 2022 | Journal Article | Lang: Chinese
+### R00004 | 2022 | Journal Article | Lang: Spanish
 TI: Early biomarkers of acute kidney injury after congenital heart surgery in children
 AB: 64 children after surgery for congenital heart disease; early biomarkers were compared between
 children with and without AKI.
@@ -48,9 +48,9 @@ AB: [NO ABSTRACT AVAILABLE]
 
 - **R00003** fails the index test clearly (the specimen is stated and it is plasma), so the
   record does not pass the unclear gate even though the population is right.
-- **R00004** is in Chinese, but the English abstract is screened normally; the missing marker
+- **R00004** is in Spanish, but the English abstract is screened normally; the missing marker
   names make it unclear rather than excluded (protocol case d). The language is flagged in the
-  outputs if Chinese is outside `languages_allowed`.
+  outputs if Spanish is outside `languages_allowed`.
 - **R00006** could be a letter with original data. A missing abstract does not prove it lacks
   data, and the title plausibly meets both core criteria, so retrieve the full text.
 
